@@ -530,7 +530,7 @@ section{padding:5rem 0}
           <li><span class="pcheck">✓</span> SSL security certificate</li>
           <li><span class="pcheck">✓</span> Live within 72 hours</li>
         </ul>
-        <a href="#contact" class="btn btn-full">Get started →</a>
+        <a href="https://buy.stripe.com/6oUeV52V3a3Xe4y235bfO00" target="_blank" rel="noopener" class="btn btn-full">Get started →</a>
         <p class="pcard-note">* Website address (e.g. yourbusiness.co.uk) purchased separately.</p>
       </div>
 
@@ -551,7 +551,7 @@ section{padding:5rem 0}
           <li class="email-feature" id="monthly-email-feat">✉️ Professional email address included</li>
         </ul>
         <!-- Replace [STRIPE_LINK_MONTHLY] with your Stripe Payment Link URL -->
-        <a href="https://buy.stripe.com/[STRIPE_LINK_MONTHLY]" class="btn-outline">Subscribe monthly →</a>
+        <a href="https://buy.stripe.com/3cI9AL0MVb817GaazBbfO01" id="btn-monthly-pay" target="_blank" rel="noopener" class="btn-outline">Subscribe monthly →</a>
         <p class="stripe-note">🔒 Secure payment via Stripe</p>
       </div>
 
@@ -574,7 +574,7 @@ section{padding:5rem 0}
           <li class="email-feature" id="annual-email-feat">✉️ Professional email address included</li>
         </ul>
         <!-- Replace [STRIPE_LINK_ANNUAL] with your Stripe Payment Link URL -->
-        <a href="https://buy.stripe.com/[STRIPE_LINK_ANNUAL]" class="btn btn-rose btn-full">Subscribe annually →</a>
+        <a href="https://buy.stripe.com/dRmeV51QZb810dIazBbfO03" id="btn-annual-pay" target="_blank" rel="noopener" class="btn btn-rose btn-full">Subscribe annually →</a>
         <p class="stripe-note">🔒 Secure payment via Stripe</p>
       </div>
 
@@ -834,6 +834,17 @@ function setCurrency(c) {
   });
 }
 
+var STRIPE = {
+  monthly: {
+    off: 'https://buy.stripe.com/3cI9AL0MVb817GaazBbfO01',
+    on:  'https://buy.stripe.com/6oUaEP1QZekd0dI8rtbfO02'
+  },
+  annual: {
+    off: 'https://buy.stripe.com/dRmeV51QZb810dIazBbfO03',
+    on:  'https://buy.stripe.com/9B63cn3Z75NH7GafTVbfO04'
+  }
+};
+
 function setEmail(plan, state, btn) {
   var on = state === 'on';
   if(plan === 'monthly') monthlyEmail = on;
@@ -842,6 +853,9 @@ function setEmail(plan, state, btn) {
   btn.classList.add('active');
   var featEl = document.getElementById(plan + '-email-feat');
   if(featEl) featEl.classList.toggle('show', on);
+  // Update Stripe payment link
+  var payBtn = document.getElementById('btn-' + plan + '-pay');
+  if(payBtn) payBtn.href = STRIPE[plan][on ? 'on' : 'off'];
   updatePricing();
 }
 
