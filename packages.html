@@ -43,7 +43,11 @@ h1,h2,h3{font-family:'Fraunces',serif}
 .curr-btn.active{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(44,26,14,.15)}
 
 /* NAV */
-.site-nav{position:sticky;top:0;z-index:200;background:rgba(255,251,247,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.site-nav{z-index:200;background:rgba(255,251,247,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+@media(min-width:781px){.site-nav{position:sticky;top:0}}
+.back-top{position:fixed;bottom:1.5rem;right:1.5rem;width:46px;height:46px;background:var(--ink);color:#fff;border:none;border-radius:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s,background .18s;z-index:150;line-height:1}
+.back-top.visible{opacity:1;transform:translateY(0)}
+.back-top:hover{background:var(--rose)}
 .nav-inner{max-width:1080px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{font-family:'Fraunces',serif;font-size:1.22rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-.02em;flex-shrink:0}
 .brand em{font-style:italic;color:var(--rose)}
@@ -421,6 +425,10 @@ function closeNav(){
 document.addEventListener('click',function(e){
   if(mobileNav.classList.contains('open')&&!mobileNav.contains(e.target)&&!hamburger.contains(e.target))closeNav();
 });
+window.addEventListener('scroll',function(){
+  var b=document.getElementById('back-top');
+  if(b)b.classList.toggle('visible',window.scrollY>400);
+});
 document.querySelectorAll('.faq-q').forEach(function(btn){
   btn.addEventListener('click',function(){
     var item=btn.parentElement,isOpen=item.classList.contains('open');
@@ -430,5 +438,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn){
   });
 });
 </script>
+<button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
 </body>
 </html>
