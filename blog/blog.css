@@ -101,7 +101,7 @@ header { position: sticky; top: 0; z-index: 200; }
 
 .archive-grid {
   max-width: 1080px;
-  margin: 3.5rem auto 0;
+  margin: 3.5rem auto 3.5rem;
   padding: 0 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
