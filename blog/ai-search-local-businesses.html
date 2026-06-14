@@ -12,6 +12,9 @@
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://michelleflares.com/blog/images/hero-ai-search.jpg">
   <meta name="robots" content="index, follow">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,50 +24,63 @@
     "datePublished": "2025-06-13",
     "dateModified": "2025-06-13",
     "author": { "@type": "Person", "name": "Michelle Flares" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Michelle Flares",
-      "url": "https://michelleflares.com"
-    }
+    "publisher": { "@type": "Organization", "name": "Michelle Flares", "url": "https://michelleflares.com" }
   }
   </script>
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
 
-<!-- ── HEADER ── -->
-<header class="site-header">
-  <a class="logo" href="/">michelle<em>flares</em></a>
-  <nav aria-label="Main navigation">
-    <ul class="site-nav">
-      <li><a href="/#services">Services</a></li>
-      <li><a href="/#pricing">Pricing</a></li>
-      <li><a href="/#faq">FAQ</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/#contact" class="nav-cta">Get started →</a></li>
-    </ul>
-  </nav>
+<!-- NAV -->
+<header>
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="brand">michelle<em>flares</em></a>
+    <div class="nav-links">
+      <a href="/#services" class="nav-link">Services</a>
+      <a href="/#pricing" class="nav-link">Pricing</a>
+      <a href="/packages" class="nav-link">Packages</a>
+      <a href="/#additional" class="nav-link">Extra Services</a>
+      <a href="/blog/" class="nav-link active">Blog</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="/#contact" class="btn btn-rose">Get started →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+  <a href="/#services" class="mobile-nav-link">Services</a>
+  <a href="/#pricing" class="mobile-nav-link">Pricing</a>
+  <a href="/packages" class="mobile-nav-link">Packages</a>
+  <a href="/#additional" class="mobile-nav-link">Extra Services</a>
+  <a href="/blog/" class="mobile-nav-link">Blog</a>
+  <a href="/#contact" class="mobile-nav-link">Contact</a>
+  <div class="mobile-nav-bottom">
+    <a href="/#contact" class="btn btn-rose" style="justify-content:center">Get started →</a>
+  </div>
+</div>
 </header>
 
-<!-- ── BREADCRUMB ── -->
+<!-- BREADCRUMB -->
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="/">Home</a>
-  <span>›</span>
-  <a href="/blog/">Blog</a>
-  <span>›</span>
+  <a href="/">Home</a> <span>›</span>
+  <a href="/blog/">Blog</a> <span>›</span>
   <span>How AI search is changing local business</span>
 </nav>
 
-<!-- ── ARTICLE ── -->
+<!-- ARTICLE -->
 <main class="article-wrap">
 
   <!--
-    HERO IMAGE INSTRUCTIONS:
-    Generate in Adobe Firefly at 1200×630px.
-    Prompt: "Abstract glowing digital network with soft light trails connecting small British shop storefronts, dark navy background, warm amber and soft purple glow, cinematic wide angle, no text, no logos"
-    Export as: images/hero-ai-search.jpg (JPEG, 85% quality)
-    Replace the placeholder below with:
-    <img class="article-hero" src="images/hero-ai-search.jpg" alt="Glowing digital network connecting local business storefronts" width="1200" height="630">
+    HERO IMAGE: Generate at 1560×800px in Freepik/Firefly.
+    Prompt: "Abstract glowing digital network with soft light trails connecting small British shop storefronts, warm cream and amber tones on a light background, cinematic wide angle, no text, no logos"
+    Save as: blog/images/hero-ai-search.jpg
+    Replace placeholder with:
+    <img class="article-hero" src="images/hero-ai-search.jpg" alt="Glowing digital network connecting local business storefronts" width="1560" height="800">
   -->
   <div class="article-hero-placeholder p3" aria-hidden="true">🤖</div>
 
@@ -129,18 +145,13 @@
       When a potential customer asks ChatGPT "who's a good plumber near me," the AI returns a handful of names with confidence. There's no scrolling through results. The businesses it lists get the call; the others don't. This makes being well-documented and well-reviewed online more important than ever — even for businesses that have survived for years on word of mouth alone.
     </div>
 
-    <!--
-      INLINE IMAGE INSTRUCTIONS:
-      Generate in Adobe Firefly at 1200×800px.
-      Prompt: "A modern voice assistant smart speaker device sitting on a kitchen counter next to a person about to make a phone call, warm natural morning light, photorealistic, no brand logos visible"
-      Export as: images/inline-voice-assistant.jpg (JPEG, 85% quality)
-      Replace placeholder below with:
-      <figure>
-        <img src="images/inline-voice-assistant.jpg" alt="Voice assistant on a kitchen counter next to someone about to make a phone call" width="1200" height="800">
-        <figcaption>Voice assistants like Siri, Alexa, and Google Assistant are increasingly the first stop for local business searches.</figcaption>
-      </figure>
-    -->
     <figure>
+      <!--
+        INLINE IMAGE: Generate at 1560×1000px.
+        Prompt: "A modern voice assistant smart speaker device sitting on a kitchen counter next to a person about to make a phone call, warm natural morning light, photorealistic, no brand logos visible"
+        Save as: blog/images/inline-voice-assistant.jpg
+        Replace with: <img src="images/inline-voice-assistant.jpg" alt="Voice assistant on a kitchen counter next to someone about to make a phone call" width="1560" height="1000">
+      -->
       <div class="inline-placeholder p3" aria-hidden="true">🔊</div>
       <figcaption>Voice assistants like Siri, Alexa, and Google Assistant are increasingly the first stop for local business searches.</figcaption>
     </figure>
@@ -151,7 +162,7 @@
     <p>This is step one for both traditional local search and AI search. Google's own AI tools pull heavily from Google Business Profiles when answering local queries. An unverified or incomplete listing is a missed opportunity every time someone searches for your type of business nearby.</p>
 
     <h3>2. Make your website clear about who you are and where you work</h3>
-    <p>AI tools read websites to understand what a business does. Your site should clearly state your business name, the services you offer, which towns or areas you cover, your contact details, and your opening hours. This sounds basic — but many business websites bury or omit this information entirely, making it hard for AI tools to confidently recommend them.</p>
+    <p>AI tools read websites to understand what a business does. Your site should clearly state your business name, the services you offer, which towns or areas you cover, your contact details, and your opening hours. This sounds basic — but many business websites bury or omit this information entirely.</p>
 
     <h3>3. Build up genuine Google reviews</h3>
     <p>Reviews are one of the strongest signals in both traditional and AI-powered local search. A business with consistent, recent positive reviews is far more likely to be recommended than one with an empty or outdated review profile. After every successful job, ask your customer for a review and make it easy for them with a direct link.</p>
@@ -160,7 +171,7 @@
     <p>AI tools treat mentions of your business across multiple trustworthy websites as a sign of credibility. Your local chamber of commerce, trade-specific directories (Checkatrade, Rated People, Yell), and any local press coverage all contribute. Make sure your name, address, and phone number are consistent everywhere you appear.</p>
 
     <h3>5. Don't ignore Bing</h3>
-    <p>Most UK businesses focus entirely on Google — understandably. But ChatGPT uses Bing's web index when answering local search queries. Setting up a free Bing Places listing takes only a few minutes (you can import your Google Business Profile data directly) and is a quick win for AI search visibility that almost no local businesses bother with.</p>
+    <p>Most UK businesses focus entirely on Google — understandably. But ChatGPT uses Bing's web index when answering local search queries. Setting up a free Bing Places listing takes only a few minutes and is a quick win for AI search visibility that almost no local businesses bother with.</p>
 
     <h2>Is this urgent, or can it wait?</h2>
 
@@ -174,9 +185,9 @@
 
     <p>Not sure where you currently stand? The quickest test is this: open Google and search for your type of business in your town. Then do the same on Bing. Then ask ChatGPT. See whose names come up. If it isn't yours, you know where to start.</p>
 
-  </div><!-- /article-body -->
+  </div>
 
-  <!-- ── READ NEXT ── -->
+  <!-- READ NEXT -->
   <nav class="read-next" aria-label="More articles">
     <h3>You might also find useful</h3>
     <div class="read-next-grid">
@@ -193,25 +204,56 @@
     </div>
   </nav>
 
-  <!-- ── CTA ── -->
+  <!-- CTA -->
   <div class="article-cta">
     <h3>Start where it matters most</h3>
     <p>A professional website and a verified Google Business Profile are the two most important steps for visibility — in both traditional and AI search. We handle both, quickly and affordably.</p>
-    <a class="btn-primary" href="/#contact">Talk to us →</a>
+    <a class="btn btn-rose" href="/#contact" style="font-size:1rem;padding:.9rem 2rem">Talk to us →</a>
   </div>
 
 </main>
 
-<!-- ── FOOTER ── -->
+<!-- FOOTER -->
 <footer class="site-footer">
-  <span>© 2025 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></span>
-  <nav class="footer-links" aria-label="Footer navigation">
-    <a href="/#services">Services</a>
-    <a href="/#pricing">Pricing</a>
-    <a href="/#contact">Contact</a>
-    <a href="/privacy">Privacy</a>
-  </nav>
+  <div class="container">
+    <p class="footer-brand">michelle<em>flares</em>.com</p>
+    <nav class="footer-links">
+      <a href="/#services">Services</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/packages">Packages</a>
+      <a href="/#additional">Extra Services</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+    <p>© 2025 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></p>
+  </div>
 </footer>
+
+<button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+var hamburger = document.getElementById('hamburger');
+var mobileNav = document.getElementById('mobile-nav');
+hamburger.addEventListener('click', function(){
+  var open = mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+document.addEventListener('click', function(e){
+  if(mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)){
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+});
+window.addEventListener('scroll', function(){
+  var b = document.getElementById('back-top');
+  if(b) b.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
 
 </body>
 </html>

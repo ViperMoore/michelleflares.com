@@ -12,6 +12,9 @@
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://michelleflares.com/blog/images/hero-need-website.jpg">
   <meta name="robots" content="index, follow">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,50 +24,63 @@
     "datePublished": "2025-06-13",
     "dateModified": "2025-06-13",
     "author": { "@type": "Person", "name": "Michelle Flares" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Michelle Flares",
-      "url": "https://michelleflares.com"
-    }
+    "publisher": { "@type": "Organization", "name": "Michelle Flares", "url": "https://michelleflares.com" }
   }
   </script>
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
 
-<!-- ── HEADER ── -->
-<header class="site-header">
-  <a class="logo" href="/">michelle<em>flares</em></a>
-  <nav aria-label="Main navigation">
-    <ul class="site-nav">
-      <li><a href="/#services">Services</a></li>
-      <li><a href="/#pricing">Pricing</a></li>
-      <li><a href="/#faq">FAQ</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/#contact" class="nav-cta">Get started →</a></li>
-    </ul>
-  </nav>
+<!-- NAV -->
+<header>
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="brand">michelle<em>flares</em></a>
+    <div class="nav-links">
+      <a href="/#services" class="nav-link">Services</a>
+      <a href="/#pricing" class="nav-link">Pricing</a>
+      <a href="/packages" class="nav-link">Packages</a>
+      <a href="/#additional" class="nav-link">Extra Services</a>
+      <a href="/blog/" class="nav-link active">Blog</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="/#contact" class="btn btn-rose">Get started →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+  <a href="/#services" class="mobile-nav-link">Services</a>
+  <a href="/#pricing" class="mobile-nav-link">Pricing</a>
+  <a href="/packages" class="mobile-nav-link">Packages</a>
+  <a href="/#additional" class="mobile-nav-link">Extra Services</a>
+  <a href="/blog/" class="mobile-nav-link">Blog</a>
+  <a href="/#contact" class="mobile-nav-link">Contact</a>
+  <div class="mobile-nav-bottom">
+    <a href="/#contact" class="btn btn-rose" style="justify-content:center">Get started →</a>
+  </div>
+</div>
 </header>
 
-<!-- ── BREADCRUMB ── -->
+<!-- BREADCRUMB -->
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="/">Home</a>
-  <span>›</span>
-  <a href="/blog/">Blog</a>
-  <span>›</span>
+  <a href="/">Home</a> <span>›</span>
+  <a href="/blog/">Blog</a> <span>›</span>
   <span>Does my business need a website?</span>
 </nav>
 
-<!-- ── ARTICLE ── -->
+<!-- ARTICLE -->
 <main class="article-wrap">
 
   <!--
-    HERO IMAGE INSTRUCTIONS:
-    Generate in Adobe Firefly at 1200×630px.
-    Prompt: "A friendly UK tradesperson — plumber or electrician — glancing at their phone on a job site, warm natural light, editorial documentary style, shallow depth of field, no text overlay, no logos"
-    Export as: images/hero-need-website.jpg (JPEG, 85% quality)
-    Replace the placeholder below with:
-    <img class="article-hero" src="images/hero-need-website.jpg" alt="Local UK tradesperson checking their phone on a job" width="1200" height="630">
+    HERO IMAGE: Generate at 1560×800px in Freepik/Firefly.
+    Prompt: "A friendly UK tradesperson — plumber or electrician — glancing at their phone on a job site, warm natural light, editorial documentary style, shallow depth of field, no text overlay"
+    Save as: blog/images/hero-need-website.jpg
+    Then replace the placeholder below with:
+    <img class="article-hero" src="images/hero-need-website.jpg" alt="Local UK tradesperson checking their phone on a job" width="1560" height="800">
   -->
   <div class="article-hero-placeholder p1" aria-hidden="true">🔧</div>
 
@@ -122,18 +138,13 @@
       Social media and a website work well together. Platforms like Facebook and Instagram are great for posting updates and engaging existing customers. Your website is where serious enquiries convert into actual bookings or calls. You need both — not one instead of the other.
     </div>
 
-    <!--
-      INLINE IMAGE INSTRUCTIONS:
-      Generate in Adobe Firefly at 1200×800px.
-      Prompt: "A laptop open on a clean, minimal business website sitting on a kitchen table in the evening, warm lamp light, shallow depth of field, photorealistic, no text on screen"
-      Export as: images/inline-laptop-evening.jpg (JPEG, 85% quality)
-      Replace placeholder below with:
-      <figure>
-        <img src="images/inline-laptop-evening.jpg" alt="Laptop showing a local business website on a kitchen table in the evening" width="1200" height="800">
-        <figcaption>Your website works for you around the clock — even when your shop is closed.</figcaption>
-      </figure>
-    -->
     <figure>
+      <!--
+        INLINE IMAGE: Generate at 1560×1000px in Freepik/Firefly.
+        Prompt: "A laptop open on a clean, minimal business website sitting on a kitchen table in the evening, warm lamp light, shallow depth of field, photorealistic, no text on screen"
+        Save as: blog/images/inline-laptop-evening.jpg
+        Replace with: <img src="images/inline-laptop-evening.jpg" alt="Laptop showing a local business website on a kitchen table in the evening" width="1560" height="1000">
+      -->
       <div class="inline-placeholder p1" aria-hidden="true">💻</div>
       <figcaption>Your website works for you around the clock — even when your shop is closed.</figcaption>
     </figure>
@@ -162,9 +173,9 @@
 
     <p>The good news? Getting a professional website for a local UK business no longer requires a big agency, a long wait, or any technical knowledge. A focused, well-built site can be live within 48 hours — and start working for you the same day.</p>
 
-  </div><!-- /article-body -->
+  </div>
 
-  <!-- ── READ NEXT ── -->
+  <!-- READ NEXT -->
   <nav class="read-next" aria-label="More articles">
     <h3>You might also find useful</h3>
     <div class="read-next-grid">
@@ -181,25 +192,56 @@
     </div>
   </nav>
 
-  <!-- ── CTA ── -->
+  <!-- CTA -->
   <div class="article-cta">
     <h3>Ready to get your business found?</h3>
     <p>Professional websites for UK local businesses from £199. Live in 48 hours. No tech knowledge needed.</p>
-    <a class="btn-primary" href="/#contact">Get in touch →</a>
+    <a class="btn btn-rose" href="/#contact" style="font-size:1rem;padding:.9rem 2rem">Get in touch →</a>
   </div>
 
 </main>
 
-<!-- ── FOOTER ── -->
+<!-- FOOTER -->
 <footer class="site-footer">
-  <span>© 2025 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></span>
-  <nav class="footer-links" aria-label="Footer navigation">
-    <a href="/#services">Services</a>
-    <a href="/#pricing">Pricing</a>
-    <a href="/#contact">Contact</a>
-    <a href="/privacy">Privacy</a>
-  </nav>
+  <div class="container">
+    <p class="footer-brand">michelle<em>flares</em>.com</p>
+    <nav class="footer-links">
+      <a href="/#services">Services</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/packages">Packages</a>
+      <a href="/#additional">Extra Services</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+    <p>© 2025 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></p>
+  </div>
 </footer>
+
+<button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+var hamburger = document.getElementById('hamburger');
+var mobileNav = document.getElementById('mobile-nav');
+hamburger.addEventListener('click', function(){
+  var open = mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+document.addEventListener('click', function(e){
+  if(mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)){
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+});
+window.addEventListener('scroll', function(){
+  var b = document.getElementById('back-top');
+  if(b) b.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
 
 </body>
 </html>

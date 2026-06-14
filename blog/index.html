@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Guides for Local UK Businesses | Michelle Flares</title>
+  <title>Blog — Practical Guides for Local UK Businesses | Michelle Flares</title>
   <meta name="description" content="Practical guides for local UK businesses on websites, Google Maps, and getting found online. No jargon, no hard sell — just what actually works.">
   <link rel="canonical" href="https://michelleflares.com/blog/">
   <meta property="og:title" content="Blog — Guides for Local UK Businesses | Michelle Flares">
@@ -11,111 +11,170 @@
   <meta property="og:url" content="https://michelleflares.com/blog/">
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
 
-<!-- ── HEADER ── -->
-<header class="site-header">
-  <a class="logo" href="/">michelle<em>flares</em></a>
-  <nav aria-label="Main navigation">
-    <ul class="site-nav">
-      <li><a href="/#services">Services</a></li>
-      <li><a href="/#pricing">Pricing</a></li>
-      <li><a href="/#faq">FAQ</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/#contact" class="nav-cta">Get started →</a></li>
-    </ul>
-  </nav>
+<!-- NAV -->
+<header>
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="brand">michelle<em>flares</em></a>
+    <div class="nav-links">
+      <a href="/#services" class="nav-link">Services</a>
+      <a href="/#pricing" class="nav-link">Pricing</a>
+      <a href="/packages" class="nav-link">Packages</a>
+      <a href="/#additional" class="nav-link">Extra Services</a>
+      <a href="/blog/" class="nav-link active">Blog</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="/#contact" class="btn btn-rose">Get started →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+  <a href="/#services" class="mobile-nav-link">Services</a>
+  <a href="/#pricing" class="mobile-nav-link">Pricing</a>
+  <a href="/packages" class="mobile-nav-link">Packages</a>
+  <a href="/#additional" class="mobile-nav-link">Extra Services</a>
+  <a href="/blog/" class="mobile-nav-link">Blog</a>
+  <a href="/#contact" class="mobile-nav-link">Contact</a>
+  <div class="mobile-nav-bottom">
+    <a href="/#contact" class="btn btn-rose" style="justify-content:center">Get started →</a>
+  </div>
+</div>
 </header>
 
-<!-- ── HERO ── -->
-<section class="blog-hero">
-  <h1>Practical guides for local businesses</h1>
-  <p>Real answers to the questions we hear most — on websites, Google Maps, and getting found online. No jargon, no hard sell.</p>
+<!-- HERO -->
+<section class="archive-hero">
+  <div class="container">
+    <span class="eyebrow">From the blog</span>
+    <h1>Practical tips for<br>local businesses</h1>
+    <p>No fluff. Just useful things that help your business get found online — written in plain English.</p>
+  </div>
 </section>
 
-<!-- ── ARTICLE CARDS ── -->
-<main class="blog-grid" aria-label="Blog articles">
+<!-- ARTICLE GRID -->
+<main>
+  <div class="archive-grid">
 
-  <a class="blog-card" href="does-my-business-need-a-website.html">
-    <!--
-      IMAGE INSTRUCTIONS:
-      Generate in Adobe Firefly at 840×570px (3:2 landscape).
-      Prompt: "A friendly UK tradesperson — plumber or electrician — glancing at their phone on a job site, warm natural light, editorial documentary style, shallow depth of field, no text overlay"
-      Export as: images/hero-need-website.jpg (JPEG, 85% quality)
-      Then replace the placeholder div below with:
-      <img class="blog-card-img" src="images/hero-need-website.jpg" alt="Local UK tradesperson checking their phone" width="280" height="190">
-    -->
-    <div class="blog-card-img-placeholder p1" aria-hidden="true">🔧</div>
-    <div class="blog-card-body">
-      <span class="tag">Getting started</span>
-      <h2>Does My Small Business Actually Need a Website in 2025?</h2>
-      <p>Social media feels free and easy — so why do businesses with websites consistently win more customers? We look at the real numbers and the real cost of being offline.</p>
-      <div class="blog-card-meta">
-        <span>📖 5 min read</span>
-        <span>Websites · Credibility</span>
+    <a class="arc-card" href="/blog/does-my-business-need-a-website.html">
+      <!--
+        Replace placeholder with:
+        <img class="arc-card-img" src="images/hero-need-website.jpg" alt="Local UK tradesperson checking their phone" width="640" height="210">
+      -->
+      <div class="arc-card-img-placeholder p1" aria-hidden="true">🔧</div>
+      <div class="arc-card-body">
+        <span class="tag">Getting started</span>
+        <h2>Does My Small Business Actually Need a Website in 2025?</h2>
+        <p>Social media feels free and easy — so why do businesses with websites consistently win more customers? We look at the real numbers and the real cost of being offline.</p>
+        <div class="arc-card-meta">
+          <span>📖 5 min read</span>
+          <span>June 2025</span>
+        </div>
+        <span class="arc-card-read">Read article →</span>
       </div>
-      <div class="blog-card-read">Read article →</div>
-    </div>
-  </a>
+    </a>
 
-  <a class="blog-card" href="google-maps-beginners-guide.html">
-    <!--
-      IMAGE INSTRUCTIONS:
-      Generate in Adobe Firefly at 840×570px (3:2 landscape).
-      Prompt: "Aerial perspective of colourful map location pins floating above a British high street, abstract and graphic, clean navy and amber colour palette, soft shadows, no text"
-      Export as: images/hero-google-maps.jpg (JPEG, 85% quality)
-      Then replace the placeholder div below with:
-      <img class="blog-card-img" src="images/hero-google-maps.jpg" alt="Map pins over a UK high street" width="280" height="190">
-    -->
-    <div class="blog-card-img-placeholder p2" aria-hidden="true">📍</div>
-    <div class="blog-card-body">
-      <span class="tag">Local search</span>
-      <h2>Google Maps for Local Businesses: The Complete Beginner's Guide</h2>
-      <p>Your Google Business Profile is the single most powerful free tool available to any local business. Here's how to set it up properly — and what most businesses get wrong.</p>
-      <div class="blog-card-meta">
-        <span>📖 6 min read</span>
-        <span>Google Maps · Reviews</span>
+    <a class="arc-card" href="/blog/google-maps-beginners-guide.html">
+      <!--
+        Replace placeholder with:
+        <img class="arc-card-img" src="images/hero-google-maps.jpg" alt="Map pins over a UK high street" width="640" height="210">
+      -->
+      <div class="arc-card-img-placeholder p2" aria-hidden="true">📍</div>
+      <div class="arc-card-body">
+        <span class="tag">Local search</span>
+        <h2>Google Maps for Local Businesses: The Complete Beginner's Guide</h2>
+        <p>Your Google Business Profile is the single most powerful free tool available to any local business. Here's how to set it up properly — and what most businesses get wrong.</p>
+        <div class="arc-card-meta">
+          <span>📖 6 min read</span>
+          <span>June 2025</span>
+        </div>
+        <span class="arc-card-read">Read article →</span>
       </div>
-      <div class="blog-card-read">Read article →</div>
-    </div>
-  </a>
+    </a>
 
-  <a class="blog-card" href="ai-search-local-businesses.html">
-    <!--
-      IMAGE INSTRUCTIONS:
-      Generate in Adobe Firefly at 840×570px (3:2 landscape).
-      Prompt: "Abstract glowing digital network connecting small shop storefronts in a British town, dark navy background, soft amber and purple light trails, cinematic, no text"
-      Export as: images/hero-ai-search.jpg (JPEG, 85% quality)
-      Then replace the placeholder div below with:
-      <img class="blog-card-img" src="images/hero-ai-search.jpg" alt="Digital network connecting local business storefronts" width="280" height="190">
-    -->
-    <div class="blog-card-img-placeholder p3" aria-hidden="true">🤖</div>
-    <div class="blog-card-body">
-      <span class="tag">AI &amp; the future</span>
-      <h2>How AI Search Is Changing the Way Customers Find Local Businesses</h2>
-      <p>Customers are now asking ChatGPT and Google AI "find me a plumber near me." Is your business showing up? The good news: getting visible in AI search is simpler than most people think.</p>
-      <div class="blog-card-meta">
-        <span>📖 6 min read</span>
-        <span>AI search · Future-proofing</span>
+    <a class="arc-card" href="/blog/ai-search-local-businesses.html">
+      <!--
+        Replace placeholder with:
+        <img class="arc-card-img" src="images/hero-ai-search.jpg" alt="Digital network connecting local business storefronts" width="640" height="210">
+      -->
+      <div class="arc-card-img-placeholder p3" aria-hidden="true">🤖</div>
+      <div class="arc-card-body">
+        <span class="tag">AI &amp; the future</span>
+        <h2>How AI Search Is Changing the Way Customers Find Local Businesses</h2>
+        <p>Customers are now asking ChatGPT and Google AI to find local businesses. Is yours showing up? Getting visible in AI search is simpler than most people think.</p>
+        <div class="arc-card-meta">
+          <span>📖 6 min read</span>
+          <span>June 2025</span>
+        </div>
+        <span class="arc-card-read">Read article →</span>
       </div>
-      <div class="blog-card-read">Read article →</div>
-    </div>
-  </a>
+    </a>
+
+    <!-- ADD MORE CARDS HERE as you publish new articles -->
+
+  </div>
+
+  <!-- PAGINATION (shows when you have more than 8 articles) -->
+  <!-- Uncomment and expand this when needed:
+  <nav class="pagination" aria-label="Page navigation">
+    <a class="page-btn active" href="/blog/">1</a>
+    <a class="page-btn" href="/blog/page/2/">2</a>
+    <a class="page-btn wide" href="/blog/page/2/">Next →</a>
+  </nav>
+  -->
 
 </main>
 
-<!-- ── FOOTER ── -->
+<!-- FOOTER -->
 <footer class="site-footer">
-  <span>© 2025 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></span>
-  <nav class="footer-links" aria-label="Footer navigation">
-    <a href="/#services">Services</a>
-    <a href="/#pricing">Pricing</a>
-    <a href="/#contact">Contact</a>
-    <a href="/privacy">Privacy</a>
-  </nav>
+  <div class="container">
+    <p class="footer-brand">michelle<em>flares</em>.com</p>
+    <nav class="footer-links">
+      <a href="/#services">Services</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/packages">Packages</a>
+      <a href="/#additional">Extra Services</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+    <p>© 2025 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></p>
+  </div>
 </footer>
+
+<button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+var hamburger = document.getElementById('hamburger');
+var mobileNav = document.getElementById('mobile-nav');
+hamburger.addEventListener('click', function(){
+  var open = mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+document.addEventListener('click', function(e){
+  if(mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)){
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+});
+window.addEventListener('scroll', function(){
+  var b = document.getElementById('back-top');
+  if(b) b.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
 
 </body>
 </html>
