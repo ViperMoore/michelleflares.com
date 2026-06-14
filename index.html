@@ -274,6 +274,20 @@ header{position:sticky;top:0;z-index:200}
 .footer-links a:hover{color:var(--rose)}
 .site-footer p{font-size:.8rem;color:#5A3A20}
 .site-footer a{color:#8B5E3C}
+
+/* ── FORM THANK YOU STATE ── */
+.form-thankyou{display:none;text-align:center;padding:2.5rem 1.5rem;background:var(--cream-deep);border-radius:16px;border:1.5px solid var(--border)}
+.form-thankyou.show{display:block}
+.form-thankyou .ty-icon{font-size:3rem;margin-bottom:1rem;line-height:1}
+.form-thankyou h3{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--ink);margin-bottom:.6rem;letter-spacing:-.02em}
+.form-thankyou p{font-size:.93rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem}
+.ty-blog-links{display:flex;flex-direction:column;gap:.6rem;margin-top:1.25rem;text-align:left}
+.ty-blog-link{display:flex;align-items:center;gap:.75rem;padding:.85rem 1rem;background:#fff;border:1.5px solid var(--border);border-radius:10px;text-decoration:none;color:var(--ink);font-size:.88rem;font-weight:500;transition:border-color .18s,transform .18s}
+.ty-blog-link:hover{border-color:var(--rose);transform:translateX(3px)}
+.ty-blog-link .ty-tag{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);flex-shrink:0;width:80px}
+.ty-blog-link .ty-title{flex:1;line-height:1.35}
+.ty-blog-link .ty-arrow{color:var(--rose);flex-shrink:0}
+.contact-form.hidden{display:none}
 </style>
 </head>
 <body>
@@ -716,7 +730,7 @@ header{position:sticky;top:0;z-index:200}
         <a class="contact-link" target="_blank" rel="noopener" href="https://wa.me/447915897621">💬 WhatsApp me</a>
         <p style="font-size:.85rem;color:var(--muted);margin-top:1.25rem;line-height:1.6">I typically reply within a few hours on business days. Based online, serving businesses across England.</p>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/[PLACEHOLDER_FORMSPREE_ID]" method="POST" novalidate>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/[PLACEHOLDER_FORMSPREE_ID]" method="POST" novalidate>
         <div class="form-row">
           <div class="form-group">
             <label for="name">Your name</label>
@@ -756,9 +770,34 @@ header{position:sticky;top:0;z-index:200}
           <input type="checkbox" id="gdpr" name="gdpr" required>
           <label for="gdpr">I agree that my information may be used to respond to my enquiry and will not be shared with third parties. <a href="/privacy" style="color:var(--ink)">Privacy policy</a>.</label>
         </div>
-        <button type="submit" class="btn btn-rose">Send message →</button>
+        <button type="submit" class="btn btn-rose" id="form-submit-btn">Send message →</button>
         <p class="form-note">I typically reply within a few hours ☕</p>
       </form>
+
+      <!-- THANK YOU PANEL (shown after successful submission) -->
+      <div class="form-thankyou" id="form-thankyou">
+        <div class="ty-icon">☕</div>
+        <h3>Message received — thank you!</h3>
+        <p>I'll be in touch within a few hours. While you wait, here are a few things worth reading that might be useful for your business.</p>
+        <div class="ty-blog-links">
+          <a class="ty-blog-link" href="/blog/does-my-business-need-a-website.html">
+            <span class="ty-tag">Websites</span>
+            <span class="ty-title">Does My Small Business Actually Need a Website in 2025?</span>
+            <span class="ty-arrow">→</span>
+          </a>
+          <a class="ty-blog-link" href="/blog/google-maps-beginners-guide.html">
+            <span class="ty-tag">Google Maps</span>
+            <span class="ty-title">Google Maps for Local Businesses: The Complete Beginner's Guide</span>
+            <span class="ty-arrow">→</span>
+          </a>
+          <a class="ty-blog-link" href="/blog/ai-search-local-businesses.html">
+            <span class="ty-tag">AI search</span>
+            <span class="ty-title">How AI Search Is Changing the Way Customers Find Local Businesses</span>
+            <span class="ty-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -901,6 +940,54 @@ document.querySelectorAll('.faq-q').forEach(function(btn){
     if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
   });
 });
+
+// ── CONTACT FORM — AJAX SUBMIT (custom thank you, no Formspree redirect) ──
+var contactForm = document.getElementById('contact-form');
+var thankYou = document.getElementById('form-thankyou');
+var submitBtn = document.getElementById('form-submit-btn');
+
+if(contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Basic validation
+    var name = contactForm.querySelector('#name');
+    var email = contactForm.querySelector('#email');
+    var gdpr = contactForm.querySelector('#gdpr');
+    if(!name.value.trim() || !email.value.trim() || !gdpr.checked) {
+      if(!name.value.trim()) name.focus();
+      else if(!email.value.trim()) email.focus();
+      else if(!gdpr.checked) { gdpr.parentElement.style.color = 'var(--rose)'; }
+      return;
+    }
+
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+
+    var data = new FormData(contactForm);
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(response) {
+      if(response.ok) {
+        // Hide form, show thank you panel
+        contactForm.classList.add('hidden');
+        thankYou.classList.add('show');
+        thankYou.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        submitBtn.textContent = 'Something went wrong — please try again';
+        submitBtn.disabled = false;
+      }
+    })
+    .catch(function() {
+      submitBtn.textContent = 'Something went wrong — please try again';
+      submitBtn.disabled = false;
+    });
+  });
+}
 </script>
 <button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 
