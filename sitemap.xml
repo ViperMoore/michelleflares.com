@@ -3,11 +3,46 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://michelleflares.com/</loc>
-    <lastmod>2025-06-13</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://michelleflares.com/"/>
-    <xhtml:link rel="alternate" hreflang="de"    href="https://michelleflares.com/?lang=de"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://michelleflares.com/"/>
+  </url>
+  <url>
+    <loc>https://michelleflares.com/additional-services/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://michelleflares.com/blog/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://michelleflares.com/blog/does-my-business-need-a-website.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://michelleflares.com/blog/google-maps-beginners-guide.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://michelleflares.com/blog/ai-search-local-businesses.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://michelleflares.com/privacy/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

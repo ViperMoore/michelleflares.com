@@ -39,7 +39,7 @@
    "areaServed":["United Kingdom"],"priceRange":"£169–£399+"},
   {"@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"How much does a website cost?",
-     "acceptedAnswer":{"@type":"Answer","text":"A complete website build starts from £399 as a one-time fee, including your domain name. Annual care plans start at £169/year (that's just £14/month), covering hosting, domain renewal, SSL, professional email and ongoing support."}},
+     "acceptedAnswer":{"@type":"Answer","text":"A complete website build starts from £399, including your domain name. Most small business sites land between £399 and £599. Annual care plans are £169/year (just £14/month), covering hosting, domain renewal, SSL, professional email and same-day support."}}},
     {"@type":"Question","name":"How long does it take to build my website?",
      "acceptedAnswer":{"@type":"Answer","text":"Most websites are live within 72 hours of receiving your details."}},
     {"@type":"Question","name":"Do I need any technical knowledge?",
@@ -119,15 +119,12 @@ header{position:sticky;top:0;z-index:200}
 
 /* ── HERO ── */
 .hero{padding:5rem 1.5rem 4rem;background:linear-gradient(160deg,#FDF5EC 0%,#FFFBF7 60%)}
-.hero-inner{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;max-width:1080px;margin:0 auto}
+.hero-inner{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;max-width:780px;margin:0 auto}
 .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);color:var(--ink);letter-spacing:-.035em;line-height:1.1;margin-bottom:1.25rem}
 .hero h1 em{font-style:italic;color:var(--rose)}
 .hero-sub{font-size:1.12rem;color:var(--muted);max-width:480px;margin-bottom:2rem;line-height:1.65}
 .hero-ctas{display:flex;gap:.85rem;flex-wrap:wrap}
-.hero-photo{width:280px;height:320px;border-radius:20px;background:#F0E4D4;flex-shrink:0;overflow:hidden;border:3px solid var(--border);position:relative}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-badge{position:absolute;bottom:14px;right:-12px;background:#fff;border:2px solid var(--border);border-radius:12px;padding:.45rem .8rem;font-size:.78rem;font-weight:600;color:var(--ink);box-shadow:0 4px 12px rgba(44,26,14,.12);white-space:nowrap}
-@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-photo{width:100%;height:300px;max-width:420px}.hero{padding:3.5rem 1.25rem 3rem}}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero{padding:3.5rem 1.25rem 3rem}}
 
 /* ── BUSINESS CAROUSEL ── */
 .businesses{background:var(--cream-deep);padding:2rem 0;overflow:hidden}
@@ -145,15 +142,13 @@ header{position:sticky;top:0;z-index:200}
 .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .about-text h2{margin-bottom:1rem}
 .about-text p{font-size:.97rem;color:#6A4A30;line-height:1.75;margin-bottom:1rem}
-.about-card{background:var(--cream-alt);border-radius:20px;padding:1.75rem;border:1px solid var(--border)}
-.today-plan-title{font-family:'Fraunces',serif;font-size:1rem;color:var(--ink);margin-bottom:1.1rem;display:flex;align-items:center;gap:.4rem}
-.plan-items{list-style:none;display:flex;flex-direction:column;gap:.85rem}
-.plan-item{display:flex;align-items:flex-start;gap:.7rem;line-height:1.5}
-.plan-check{width:20px;height:20px;background:var(--rose);border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-size:.72rem;margin-top:.15rem}
-.plan-item-text{font-size:.91rem;color:#4A3020}
-.about-note{margin-top:1.25rem;padding:.9rem 1rem;background:#fff;border-radius:10px;border:1px solid var(--border);font-size:.82rem;color:#8B6B4A;font-style:italic;text-align:center;line-height:1.5}
 @media(max-width:780px){.about-inner{grid-template-columns:1fr}}
 
+
+.about-photo-wrap{position:relative;border-radius:20px;overflow:hidden;border:3px solid var(--border);box-shadow:0 12px 40px rgba(44,26,14,.12)}
+.about-photo-wrap img{width:100%;height:420px;object-fit:cover;object-position:center top;display:block}
+.about-photo-badge{position:absolute;bottom:16px;right:16px;background:#fff;border:2px solid var(--border);border-radius:12px;padding:.45rem .8rem;font-size:.78rem;font-weight:600;color:var(--ink);box-shadow:0 4px 12px rgba(44,26,14,.12);white-space:nowrap}
+@media(max-width:780px){.about-photo-wrap img{height:300px}}
 /* ── SERVICES ── */
 .services{background:var(--cream-alt)}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
@@ -166,7 +161,7 @@ header{position:sticky;top:0;z-index:200}
 .scard-price-tag{font-size:.8rem;font-weight:700;background:var(--cream-deep);color:#9A5A20;border:1px solid #E8C88A;padding:.22rem .6rem;border-radius:6px;white-space:nowrap;flex-shrink:0}
 .scard p{font-size:.91rem;color:var(--muted);line-height:1.65;margin-bottom:1.25rem}
 .scard-pts{list-style:none;display:flex;flex-direction:column;gap:.45rem;flex:1}
-.scard-pts li{font-size:.84rem;color:#8B4A5A;font-weight:600;display:flex;align-items:center;gap:.45rem;line-height:1.3}
+.scard-pts li{font-size:.84rem;color:#8B4A5A;font-weight:600;display:flex;align-items:center;gap:.45rem;line-height:1.3;word-break:break-word;overflow-wrap:anywhere}
 .scard-pts li::before{content:"✓";flex-shrink:0}
 .scard-note{font-size:.76rem;color:#A07850;margin-top:1.25rem;padding-top:.85rem;border-top:1px solid var(--border);line-height:1.55}
 
@@ -202,7 +197,7 @@ header{position:sticky;top:0;z-index:200}
 .care-btn.active{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(44,26,14,.12)}
 
 .pcard-inc{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem;flex:1}
-.pcard-inc li{font-size:.88rem;color:#4A3020;display:flex;align-items:center;gap:.5rem;line-height:1.4}
+.pcard-inc li{font-size:.88rem;color:#4A3020;display:flex;align-items:center;gap:.5rem;line-height:1.4;word-break:break-word;overflow-wrap:anywhere}
 .pcheck{color:var(--rose);font-weight:700;flex-shrink:0}
 .pcard-note{font-size:.75rem;color:#B09070;margin-top:.9rem;line-height:1.55}
 .stripe-note{font-size:.75rem;color:#A07850;text-align:center;margin-top:.75rem}
@@ -293,6 +288,48 @@ header{position:sticky;top:0;z-index:200}
 .ty-blog-link .ty-title{flex:1;line-height:1.35}
 .ty-blog-link .ty-arrow{color:var(--rose);flex-shrink:0}
 .contact-form.hidden{display:none}
+
+/* ── PORTFOLIO ── */
+.portfolio{background:var(--ink)}
+.portfolio .eyebrow{color:var(--rose)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+@media(max-width:860px){.portfolio-grid{grid-template-columns:1fr}}
+.port-card{border-radius:16px;overflow:hidden;border:1.5px solid rgba(255,255,255,.08);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;background:rgba(255,255,255,.04)}
+.port-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.35)}
+.port-img-wrap{position:relative;height:200px;overflow:hidden;background:#1a0e06}
+.port-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s}
+.port-card:hover .port-img-wrap img{transform:scale(1.04)}
+.port-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(44,26,14,.85) 100%)}
+.port-badge{position:absolute;top:.85rem;left:.85rem;font-size:.65rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;background:var(--rose);color:#fff;padding:.22rem .6rem;border-radius:5px}
+.port-body{padding:1.25rem}
+.port-body h3{font-family:'Fraunces',serif;font-size:1.05rem;color:#fff;margin-bottom:.3rem;line-height:1.25}
+.port-body p{font-size:.82rem;color:#C4A882;line-height:1.55;margin-bottom:.85rem}
+.port-tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.port-tag{font-size:.68rem;font-weight:600;color:#C4A882;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:.18rem .5rem;border-radius:4px}
+.port-placeholder{height:200px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.07)}
+.port-placeholder-inner{text-align:center}
+.port-placeholder-icon{font-size:2.5rem;opacity:.3;display:block;margin-bottom:.5rem}
+.port-placeholder-text{font-size:.75rem;color:rgba(255,255,255,.25);font-style:italic}
+.port-url{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;color:var(--rose);font-weight:600;text-decoration:none;margin-top:.75rem;transition:opacity .18s}
+.port-url:hover{opacity:.75}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--cream-alt)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+@media(max-width:860px){.testimonials-grid{grid-template-columns:1fr}}
+.tcard{background:var(--cream);border-radius:16px;padding:1.75rem;border:1.5px solid var(--border);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(44,26,14,.09)}
+.tcard-stars{color:#F5A623;font-size:1rem;letter-spacing:.1em;margin-bottom:.85rem;display:block}
+.tcard-quote{font-size:.88rem;color:#4A3020;line-height:1.7;flex:1;margin-bottom:1.1rem;font-style:italic;position:relative;padding-left:1.1rem}
+.tcard-quote::before{content:'"';position:absolute;left:0;top:-.1rem;font-family:'Fraunces',serif;font-size:1.8rem;color:var(--rose);line-height:1}
+.tcard-author{display:flex;align-items:center;gap:.75rem;padding-top:.9rem;border-top:1px solid var(--border)}
+.tcard-avatar{width:40px;height:40px;border-radius:50%;background:var(--cream-deep);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;font-family:'Fraunces',serif;font-weight:600;color:var(--rose)}
+.tcard-name{font-size:.88rem;font-weight:700;color:var(--ink);line-height:1.2}
+.tcard-biz{font-size:.77rem;color:var(--muted);line-height:1.3;margin-top:.1rem}
+
+/* ── PRICING HINT ── */
+.pricing-hint{text-align:center;background:var(--cream-alt);border-radius:12px;padding:.9rem 1.5rem;margin:1.5rem auto 0;max-width:580px;border:1px solid var(--border);font-size:.88rem;color:var(--muted);line-height:1.55}
+.pricing-hint strong{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -304,6 +341,7 @@ header{position:sticky;top:0;z-index:200}
     <a href="#" class="brand">michelle<em>flares</em></a>
     <div class="nav-links">
       <a href="/#services" class="nav-link">Services</a>
+      <a href="/#portfolio" class="nav-link">Portfolio</a>
       <a href="/#pricing" class="nav-link">Pricing</a>
       <a href="/additional-services/" class="nav-link">Additional Services</a>
       <a href="/blog/" class="nav-link">Blog</a>
@@ -324,6 +362,7 @@ header{position:sticky;top:0;z-index:200}
 
 <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
   <a href="/#services" class="mobile-nav-link" onclick="closeNav()">Services</a>
+  <a href="/#portfolio" class="mobile-nav-link" onclick="closeNav()">Portfolio</a>
   <a href="/#pricing" class="mobile-nav-link" onclick="closeNav()">Pricing</a>
   <a href="/additional-services/" class="mobile-nav-link" onclick="closeNav()">Additional Services</a>
   <a href="/blog/" class="mobile-nav-link" onclick="closeNav()">Blog</a>
@@ -351,10 +390,7 @@ header{position:sticky;top:0;z-index:200}
         <a href="#about" class="btn btn-ghost">About me</a>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="images/Michelle-Flares-Web-Designer.jpg" alt="Michelle Flares — freelance web designer" loading="eager">
-      <div class="hero-badge">✨ Live in 72hrs</div>
-    </div>
+
   </div>
 </section>
 
@@ -409,27 +445,9 @@ header{position:sticky;top:0;z-index:200}
         <a href="#contact" class="btn" style="margin-top:.5rem">Work with me →</a>
       </div>
       <div class="about-visual">
-        <div class="about-card">
-          <div class="today-plan-title">📓 Today's plan</div>
-          <ul class="plan-items">
-            <li class="plan-item">
-              <span class="plan-check">✓</span>
-              <span class="plan-item-text"><strong>Help Jake's Barbers</strong> get more bookings — their new website goes live today with a contact form and Google Maps listing.</span>
-            </li>
-            <li class="plan-item">
-              <span class="plan-check">✓</span>
-              <span class="plan-item-text"><strong>Get a local plumber</strong> to the top of Google Maps so customers find him at 10pm when a pipe bursts.</span>
-            </li>
-            <li class="plan-item">
-              <span class="plan-check">✓</span>
-              <span class="plan-item-text"><strong>Build a nail salon's first website</strong> — they've been turning away customers who couldn't find their phone number online.</span>
-            </li>
-            <li class="plan-item">
-              <span class="plan-check">✓</span>
-              <span class="plan-item-text"><strong>Fix a florist's Google listing</strong> — it says "permanently closed". She's not. Brides are missing her.</span>
-            </li>
-          </ul>
-          <div class="about-note">Every one of these is a real business, a real problem — and a real solution I can help with. ☕</div>
+        <div class="about-photo-wrap">
+          <img src="/images/Michelle-Flares-Web-Designer.jpg" alt="Michelle Flares — freelance web designer" loading="lazy">
+          <div class="about-photo-badge">✨ Live in 72hrs</div>
         </div>
       </div>
     </div>
@@ -460,7 +478,7 @@ header{position:sticky;top:0;z-index:200}
           <li>Works perfectly on every phone, tablet and desktop</li>
           <li>Contact form, opening hours, map, services — everything a customer needs to choose you</li>
           <li>Enhanced local SEO built in — so Google finds you for searches in your area</li>
-          <li>Your domain name (e.g. yourbusiness.co.uk) included</li>
+          <li>Domain name (yourbusiness.co.uk) included</li>
           <li>Live within 72 hours of your approval</li>
         </ul>
         <p class="scard-note">* Final price depends on number of pages and complexity. I'll give you an exact quote — no commitment, no pressure.</p>
@@ -475,9 +493,9 @@ header{position:sticky;top:0;z-index:200}
         <p>Once your website is live, forget it exists. I handle absolutely everything — you focus on your customers, not your website. Changed your phone number? Got a new special offer? Just send me a message and it's done the same day.</p>
         <ul class="scard-pts">
           <li>Fast, reliable hosting — your site is always online, 24/7</li>
-          <li>Your domain name (yourbusiness.co.uk) renewed — never expires on you</li>
+          <li>Domain name renewed — never expires on you</li>
           <li>SSL security certificate included — customers see the trusted padlock</li>
-          <li>Professional email address (hello@yourbusiness.co.uk) included — looks far more trustworthy than Gmail</li>
+          <li>Professional email included (hello@<wbr>yourbusiness.co.uk) — looks far more trustworthy than Gmail</li>
           <li>Security updates &amp; uptime monitoring — I catch problems before you even notice them</li>
           <li>Unlimited small text edits — hours, prices, contacts, menus changed same day</li>
           <li>Same-day email support — a real person, not a chatbot</li>
@@ -559,7 +577,7 @@ header{position:sticky;top:0;z-index:200}
           <li><span class="pcheck">✓</span> Custom-built website for your business</li>
           <li><span class="pcheck">✓</span> Ultra-fast — loads in under 1 second</li>
           <li><span class="pcheck">✓</span> Mobile-friendly, SSL &amp; click-to-call</li>
-          <li><span class="pcheck">✓</span> Domain name (e.g. yourbusiness.co.uk) included</li>
+          <li><span class="pcheck">✓</span> Domain name included (e.g. yourbusiness.co.uk)</li>
           <li><span class="pcheck">✓</span> Live within 72 hours of your approval</li>
           <li><span class="pcheck">✓</span> One round of revisions included</li>
         </ul>
@@ -582,7 +600,7 @@ header{position:sticky;top:0;z-index:200}
           <li><span class="pcheck">✓</span> Fast, reliable hosting — always online</li>
           <li><span class="pcheck">✓</span> Domain name renewal included</li>
           <li><span class="pcheck">✓</span> SSL security certificate included</li>
-          <li><span class="pcheck">✓</span> Professional email (hello@yourbusiness.co.uk)</li>
+          <li><span class="pcheck">✓</span> Professional email (hello@<wbr>yourbusiness.co.uk)</li>
           <li><span class="pcheck">✓</span> Security updates &amp; uptime monitoring</li>
           <li><span class="pcheck">✓</span> Text edits — hours, prices, contacts — same day</li>
           <li><span class="pcheck">✓</span> Same-day email support</li>
@@ -593,6 +611,7 @@ header{position:sticky;top:0;z-index:200}
       </div>
 
     </div>
+    <p class="pricing-hint"><strong>What will my site cost?</strong> Most small business websites land between <strong data-gbp="£399–£599" data-usd="$535–$803">£399–£599</strong> as a one-time build fee. Larger sites with more pages or custom features may be a little more — I'll always give you an exact quote before any commitment.</p>
     <p class="transparency-note">
       <strong>100% transparent pricing.</strong> No setup fees. No hidden costs. Domain, hosting, SSL and professional email are all included in your care plan. The price you see is the price you pay.
     </p>
@@ -655,6 +674,78 @@ header{position:sticky;top:0;z-index:200}
   </div>
 </section>
 
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <span class="eyebrow">Recent work</span>
+    <h2 class="section-title" style="color:#fff">Websites built for real businesses</h2>
+    <p class="section-lead" style="color:#C4A882">Every site is hand-coded, fast, and built around the client's brand — from the first conversation to the day it goes live.</p>
+    <div class="portfolio-grid">
+
+      <!-- CE/DE Transport -->
+      <div class="port-card">
+        <div class="port-img-wrap">
+          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=80&auto=format&fit=crop" alt="CE/DE Transport — international logistics website" loading="lazy">
+          <div class="port-overlay"></div>
+          <span class="port-badge">Transport & Logistics</span>
+        </div>
+        <div class="port-body">
+          <h3>CE / DE Transport</h3>
+          <p>Dark, high-contrast UI for an international vehicle & cargo shipper — Bulgaria to Europe. Multi-language (BG · EN · DE), active routes panel, and quote-request CTA built for B2B clients.</p>
+          <div class="port-tags">
+            <span class="port-tag">Multi-language</span>
+            <span class="port-tag">B2B</span>
+            <span class="port-tag">Quote system</span>
+            <span class="port-tag">Route visualisation</span>
+          </div>
+          <a href="https://cedetransport.eu/" target="_blank" rel="noopener" class="port-url">↗ cedetransport.eu</a>
+        </div>
+      </div>
+
+      <!-- Firegy Foods -->
+      <div class="port-card">
+        <div class="port-img-wrap">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700&q=80&auto=format&fit=crop" alt="Firegy Foods — healthy food manufacturer website" loading="lazy">
+          <div class="port-overlay"></div>
+          <span class="port-badge">Food & Beverage</span>
+        </div>
+        <div class="port-body">
+          <h3>Firegy Foods</h3>
+          <p>Vibrant product showcase for a Hungarian healthy food manufacturer distributing across Central and Western Europe. Clean product catalogue, multi-language (EN · DE), and "Get a Quote" lead generation.</p>
+          <div class="port-tags">
+            <span class="port-tag">Product catalogue</span>
+            <span class="port-tag">Multi-language</span>
+            <span class="port-tag">Export market</span>
+          </div>
+          <a href="https://firegyfoods.com/" target="_blank" rel="noopener" class="port-url">↗ firegyfoods.com</a>
+        </div>
+      </div>
+
+      <!-- Effect 2002 -->
+      <div class="port-card">
+        <div class="port-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=80&auto=format&fit=crop" alt="Effect 2002 — FMCG logistics and distribution website" loading="lazy">
+          <div class="port-overlay"></div>
+          <span class="port-badge">Logistics & Distribution</span>
+        </div>
+        <div class="port-body">
+          <h3>Effect 2002</h3>
+          <p>Corporate site for a major Bulgarian FMCG logistics operator. Clean enterprise design that leads with key milestones, warehouse capacity, and fleet size — built to instil confidence in retail chain partners.</p>
+          <div class="port-tags">
+            <span class="port-tag">Corporate</span>
+            <span class="port-tag">Multi-language</span>
+            <span class="port-tag">Enterprise</span>
+            <span class="port-tag">FMCG</span>
+          </div>
+          <a href="https://effect.bg/en/about-us/" target="_blank" rel="noopener" class="port-url">↗ effect.bg</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- BLOG -->
 <section id="blog" class="blog">
   <div class="container">
@@ -689,6 +780,55 @@ header{position:sticky;top:0;z-index:200}
           <span class="blog-read">Read article →</span>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <span class="eyebrow">Client stories</span>
+    <h2 class="section-title">What clients say</h2>
+    <p class="section-lead">Real businesses, real results — from local trades to international brands.</p>
+    <div class="testimonials-grid">
+
+      <div class="tcard">
+        <span class="tcard-stars">★★★★★</span>
+        <p class="tcard-quote">Our new website completely transformed how we present our brand to international partners. The vibrant green branding and clean, organized product showcase for our healthy bars and juices have given us a massive edge in the Central and Western European markets. It's fast, visually striking, and perfectly communicates our '100% natural' philosophy.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">TK</div>
+          <div>
+            <div class="tcard-name">Tamás Kovács</div>
+            <div class="tcard-biz">Tragadon Solutions Limited Kft · Food & Beverage Manufacturer, Budapest</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <span class="tcard-stars">★★★★★</span>
+        <p class="tcard-quote">Transporting oversized cargo like boats, caravans, and jet skis across Europe requires absolute trust, and our website needed to reflect that. The dark, high-contrast UI looks incredibly professional, and the 'Active Routes' section is brilliant for our clients. Since launching, our 'Get a Quote' requests have increased significantly. High-quality work that truly understands B2B logistics.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">SS</div>
+          <div>
+            <div class="tcard-name">Stefan Schulz</div>
+            <div class="tcard-biz">CE / DE Transport · International Logistics & Vehicle Shipping, Sofia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <span class="tcard-stars">★★★★★</span>
+        <p class="tcard-quote">As a company managing distribution for thousands of clients and massive logistics facilities, we needed a website that conveyed absolute scale and operational excellence. The layout perfectly highlights our key milestones, storage capacity, and fleet size right at the top where it counts. It gives international brands and major retail chains instant confidence in our capabilities. A flawlessly executed, clean corporate design.</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">NI</div>
+          <div>
+            <div class="tcard-name">Nikolay Ivanov</div>
+            <div class="tcard-biz">Effect 2002 Ltd. · FMCG Logistics & Distribution, Sofia</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -767,7 +907,7 @@ header{position:sticky;top:0;z-index:200}
           <span class="form-section-label">I'm interested in… (tick all that apply)</span>
           <div class="checkbox-group">
             <label class="checkbox-item"><input type="checkbox" name="service[]" value="website"> Website Build — <span data-gbp="from £399" data-usd="from $535">from £399</span></label>
-            <label class="checkbox-item"><input type="checkbox" name="service[]" value="annual"> Annual Care Plan — <span data-gbp="£169/yr" data-usd="$226/yr">£169/yr</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="service[]" value="annual"> Annual Care Plan (2 months free) — <span data-gbp="£169/yr" data-usd="$226/yr">£169/yr</span></label>
             <label class="checkbox-item"><input type="checkbox" name="service[]" value="monthly"> Monthly Care Plan — <span data-gbp="£16.90/mo" data-usd="$22.65/mo">£16.90/mo</span></label>
             <label class="checkbox-item"><input type="checkbox" name="service[]" value="gmb"> Google Business Profile Setup — <span data-gbp="£59" data-usd="$79">£59</span></label>
             <label class="checkbox-item"><input type="checkbox" name="service[]" value="gsc"> Google Search Console Setup — <span data-gbp="£79" data-usd="$106">£79</span></label>
@@ -782,7 +922,7 @@ header{position:sticky;top:0;z-index:200}
         </div>
         <div class="gdpr-row">
           <input type="checkbox" id="gdpr" name="gdpr" required>
-          <label for="gdpr">I agree that my information may be used to respond to my enquiry and will not be shared with third parties. <a href="/privacy" style="color:var(--ink)">Privacy policy</a>.</label>
+          <label for="gdpr">I agree that my information may be used to respond to my enquiry and will not be shared with third parties. <a href="/privacy/" style="color:var(--ink)">Privacy policy</a>.</label>
         </div>
         <button type="submit" class="btn btn-rose" id="form-submit-btn">Send message →</button>
         <p class="form-note">I typically reply within a few hours ☕</p>
@@ -834,7 +974,7 @@ header{position:sticky;top:0;z-index:200}
       <a href="/additional-services/">Additional Services</a>
       <a href="/blog/">Blog</a>
       <a href="/#contact">Contact</a>
-      <a href="/privacy">Privacy</a>
+      <a href="/privacy/">Privacy</a>
     </nav>
     <p>© 2026 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></p>
   </div>
