@@ -499,7 +499,7 @@ header{position:sticky;top:0;z-index:200}
           <li>Security updates &amp; uptime monitoring — I catch problems before you even notice them</li>
           <li>Unlimited small text edits — hours, prices, contacts, menus changed asap</li>
           <li>Email support — a real person, not a chatbot</li>
-          <<li>Annual plan = 2 months free (save&nbsp;<span data-gbp="£34.80" data-usd="$47">£34.80</span>)</li>
+          <li>Annual plan = 2 months free (save&nbsp;<span data-gbp="£34.80" data-usd="$47">£34.80</span>)</li>
         </ul>
       </article>
 
@@ -509,7 +509,7 @@ header{position:sticky;top:0;z-index:200}
           <h3>Monthly Care Plan</h3>
           <span class="scard-price-tag" data-gbp="£16.90/mo" data-usd="$22.65/mo">£16.90/mo</span>
         </div>
-        <p>Every single benefit of the Annual Care Plan — paid month by month, with the freedom to cancel any time. No contract, no commitment. Ideal if you'd prefer flexibility to begin with.</p>
+        <p>Every single benefit of the Annual Care Plan — paid month by month. Cancel any time, no questions asked. Please note: if you cancel, hosting stops and your website will go offline until a new plan is in place.</p>
         <ul class="scard-pts">
           <li>Fast, reliable hosting — your site is always online, 24/7</li>
           <li>Your domain name renewed — it never quietly expires</li>
@@ -518,7 +518,7 @@ header{position:sticky;top:0;z-index:200}
           <li>Security updates &amp; uptime monitoring</li>
           <li>Unlimited small text edits — changed same day</li>
           <li>Email support</li>
-          <li>Cancel anytime — no contract, no questions asked</li>
+          <li>Cancel anytime — if cancelled, site goes offline until a new plan is set up</li>
         </ul>
       </article>
 
@@ -604,7 +604,7 @@ header{position:sticky;top:0;z-index:200}
           <li><span class="pcheck">✓</span> Security updates &amp; uptime monitoring</li>
           <li><span class="pcheck">✓</span> Text edits — hours, prices, contacts — same day</li>
           <li><span class="pcheck">✓</span> Email support</li>
-          <li id="cancel-row" style="display:none"><span class="pcheck">✓</span>Cancel anytime — if cancelled, hosting stops and your site goes offline</li>
+          <li id="cancel-row" style="display:none"><span class="pcheck">✓</span> Cancel anytime — site goes offline if you do</li>
         </ul>
         <a href="https://buy.stripe.com/dRmeV51QZb810dIazBbfO03" id="care-pay-btn" target="_blank" rel="noopener" class="btn btn-rose btn-full">Get 2 months free →</a>
         <p class="stripe-note">🔒 Secure payment via Stripe</p>
@@ -849,7 +849,7 @@ header{position:sticky;top:0;z-index:200}
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">What's the difference between the Annual and Monthly care plans?<span class="faq-chevron">▾</span></button>
-        <p class="faq-a">Both plans include exactly the same things — hosting, domain renewal, SSL, professional email, security updates, text edits and support. The Annual Plan at £169/year works out to just £14.08/month, saving you £34.80 compared to paying monthly. The Monthly Plan at £16.90/month is ideal if you prefer flexibility and want to cancel any time.</p>
+        <p class="faq-a">Both plans include exactly the same things — hosting, domain renewal, SSL, professional email, security updates, text edits and support. The Annual Plan at £169/year works out to just £14.08/month, saving you £34.80 compared to paying monthly. The Monthly Plan at £16.90/month is ideal if you prefer flexibility. You can cancel any time — though please note that if you do, hosting stops and your website will go offline until a new plan is in place.</p>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Are there really no hidden fees?<span class="faq-chevron">▾</span></button>
@@ -1006,7 +1006,7 @@ function applyCarePlan() {
   var pill = document.getElementById('care-pill');
   var cancelRow = document.getElementById('cancel-row');
   if(priceEl) priceEl.textContent = d.price;
-  if(cadenceEl) cadenceEl.textContent = carePlan==='annual' ? 'per year · save '+d.saveVs+' vs monthly' : 'per month · cancel anytime, no contract';
+  if(cadenceEl) cadenceEl.textContent = carePlan==='annual' ? 'per year · save '+d.saveVs+' vs monthly' : 'per month · site goes offline if cancelled';
   if(saveWrap) saveWrap.style.display = d.showSave ? '' : 'none';
   if(equivEl) equivEl.textContent = d.equiv;
   if(payBtn){ payBtn.textContent = d.btn; payBtn.href = d.href; }
