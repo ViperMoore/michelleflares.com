@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Additional Services — Google Setup, Logo Design &amp; More | Michelle Flares</title>
+<meta name="description" content="One-time setup services for local UK businesses: Google Business Profile, Google Search Console, Analytics, Bing &amp; AI Search, logo design, social media setup and website redesigns. No hidden fees.">
+<link rel="canonical" href="https://michelleflares.com/additional-services/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2C1A0E">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://michelleflares.com/additional-services/">
+<meta property="og:title" content="Additional Services — Michelle Flares">
+<meta property="og:description" content="Google presence, analytics, logo design, social media setup, website redesigns and more. One-time fees, no ongoing costs.">
+<meta property="og:image" content="https://michelleflares.com/og-image.jpg">
+<meta name="geo.region" content="GB">
+<meta name="geo.placename" content="United Kingdom">
+<meta name="ICBM" content="51.5074, -0.1278">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#FFFBF7;color:#4A3020;-webkit-font-smoothing:antialiased;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:root{
+  --ink:#2C1A0E;--rose:#C85C6E;--rose-dark:#A8485A;
+  --cream:#FFFBF7;--cream-alt:#F7EEE4;--cream-deep:#FDF5EC;
+  --border:#E8D5C0;--muted:#7A5A40;--light-muted:#A07850;
+}
+h1,h2,h3,h4{font-family:'Fraunces',serif}
+.container{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--rose);display:block;margin-bottom:.7rem}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:var(--ink);color:#fff;border:none;padding:.72rem 1.45rem;border-radius:8px;font-size:.93rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:background .18s,transform .12s;line-height:1}
+.btn:hover{background:#4A2E18;transform:translateY(-1px)}
+.btn-rose{background:var(--rose)}
+.btn-rose:hover{background:var(--rose-dark)}
+.btn-outline{background:transparent;color:var(--ink);border:1.5px solid var(--border);padding:.72rem 1.45rem;border-radius:8px;font-size:.93rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:all .18s;display:inline-flex;align-items:center;justify-content:center}
+.btn-outline:hover{background:var(--ink);color:#fff}
+
+/* CURRENCY */
+.curr-toggle{display:flex;background:#F0E4D4;border-radius:9999px;padding:3px;gap:2px}
+.curr-btn{background:transparent;border:none;padding:.28rem .75rem;border-radius:9999px;font-size:.8rem;font-weight:600;color:#9A7A60;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;white-space:nowrap}
+.curr-btn.active{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(44,26,14,.15)}
+
+/* NAV */
+header{position:sticky;top:0;z-index:200}
+.site-nav{background:rgba(255,251,247,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:'Fraunces',serif;font-size:1.22rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-.02em;flex-shrink:0}
+.brand em{font-style:italic;color:var(--rose)}
+.nav-links{display:flex;align-items:center;gap:.15rem}
+.nav-link{font-size:.87rem;font-weight:500;color:var(--muted);padding:.45rem .7rem;border-radius:6px;text-decoration:none;white-space:nowrap;transition:color .18s,background .18s}
+.nav-link:hover{color:var(--ink);background:var(--cream-alt)}
+.nav-link.active{color:var(--rose);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:.75rem}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;transition:all .25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;inset:0;top:60px;background:var(--cream);z-index:199;padding:1.5rem;flex-direction:column;gap:.25rem;border-top:1px solid var(--border);overflow-y:auto}
+.mobile-nav.open{display:flex}
+.mobile-nav-link{font-size:1.05rem;font-weight:600;color:var(--ink);padding:.85rem 1rem;border-radius:10px;text-decoration:none}
+.mobile-nav-link:hover{background:var(--cream-alt)}
+.mobile-nav-bottom{margin-top:1rem;display:flex;flex-direction:column;gap:.75rem;padding-top:1rem;border-top:1px solid var(--border)}
+@media(max-width:780px){.nav-links{display:none}.hamburger{display:flex}.nav-right .btn{display:none}}
+
+/* PAGE HERO */
+.page-hero{background:linear-gradient(160deg,#FDF5EC 0%,#FFFBF7 60%);padding:4.5rem 1.5rem 3.5rem;text-align:center}
+.page-hero h1{font-size:clamp(2rem,4vw,3rem);color:var(--ink);letter-spacing:-.03em;line-height:1.15;margin-bottom:1rem;max-width:680px;margin-left:auto;margin-right:auto}
+.page-hero h1 em{font-style:italic;color:var(--rose)}
+.page-hero p{font-size:1.08rem;color:var(--muted);max-width:540px;margin:0 auto 1.5rem;line-height:1.65}
+.hero-note{display:inline-flex;align-items:center;gap:.5rem;background:#fff;border:1.5px solid var(--border);border-radius:9999px;padding:.45rem 1.1rem;font-size:.88rem;font-weight:600;color:var(--ink)}
+.hero-note em{color:var(--rose);font-style:normal}
+
+/* CATEGORY SECTIONS */
+.services-section{padding:4rem 0}
+.services-section:nth-child(even){background:var(--cream-alt)}
+.services-section:nth-child(odd){background:var(--cream)}
+.section-header{margin-bottom:2.5rem}
+.section-header h2{font-size:clamp(1.5rem,2.5vw,2rem);color:var(--ink);letter-spacing:-.02em;margin-bottom:.5rem}
+.section-header p{font-size:.97rem;color:var(--muted);line-height:1.65;max-width:600px}
+
+/* SERVICE CARDS */
+.srv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.srv-card{background:#fff;border-radius:18px;padding:1.75rem;border:1.5px solid var(--border);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.srv-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(44,26,14,.09)}
+.srv-card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.85rem}
+.srv-card-icon-title{display:flex;align-items:flex-start;gap:.7rem;flex:1}
+.srv-card-icon{font-size:1.75rem;flex-shrink:0;line-height:1}
+.srv-card h3{font-size:1.05rem;color:var(--ink);line-height:1.25;flex:1}
+.srv-price-wrap{text-align:right;flex-shrink:0;margin-left:.75rem}
+.srv-price{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--rose);font-weight:600;display:block;line-height:1}
+.srv-price-note{font-size:.7rem;color:var(--light-muted);display:block;margin-top:.1rem}
+.srv-badge{display:inline-block;font-size:.65rem;font-weight:700;background:var(--cream-deep);color:#9A5A20;border:1px solid #E8C88A;padding:.12rem .45rem;border-radius:5px;margin-bottom:.6rem}
+.srv-card p{font-size:.9rem;color:var(--muted);line-height:1.65;flex:0;margin-bottom:1rem}
+.srv-card-pts{list-style:none;display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.1rem}
+.srv-card-pts li{font-size:.83rem;color:#6A4A30;display:flex;align-items:flex-start;gap:.45rem;line-height:1.35}
+.srv-card-pts li::before{content:"✓";color:var(--rose);font-weight:700;flex-shrink:0}
+.srv-why{background:var(--cream-deep);border-radius:8px;padding:.65rem .85rem;font-size:.8rem;color:#6A4A30;line-height:1.55;border:1px solid var(--border)}
+.srv-why strong{color:var(--ink)}
+
+/* COMPARISON TABLE */
+.compare-section{background:var(--cream-deep);padding:4rem 0}
+.compare-section h2{font-size:clamp(1.5rem,2.5vw,2rem);color:var(--ink);letter-spacing:-.02em;margin-bottom:.6rem;text-align:center}
+.compare-section .sub{text-align:center;font-size:.95rem;color:var(--muted);margin-bottom:2.5rem}
+.compare-wrap{overflow-x:auto}
+.compare-table{width:100%;border-collapse:collapse;font-size:.88rem;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(44,26,14,.07)}
+.compare-table th{padding:.9rem 1.1rem;text-align:center;font-weight:600;color:var(--ink);background:var(--cream-alt);border-bottom:2px solid var(--border);font-family:'Fraunces',serif;font-size:1rem}
+.compare-table th:first-child{text-align:left;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:.83rem;font-weight:500;min-width:200px}
+.compare-table td{padding:.75rem 1.1rem;text-align:center;border-bottom:.5px solid var(--border);color:var(--muted)}
+.compare-table td:first-child{text-align:left;color:var(--ink);font-weight:500}
+.compare-table tr:last-child td{border-bottom:none}
+.t-yes{color:var(--rose);font-size:1.1rem;font-weight:700}
+.t-no{color:#D0C0B0;font-size:1rem}
+.t-opt{font-size:.75rem;color:var(--light-muted);font-weight:600}
+.cat-row td{background:var(--cream-deep);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);padding:.5rem 1.1rem}
+.price-row td{font-family:'Fraunces',serif;font-size:1.2rem;color:var(--ink);font-weight:600;padding-top:1.1rem;padding-bottom:.75rem;border-top:2px solid var(--border)}
+.price-row td:first-child{font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:500;color:var(--muted)}
+
+/* REDESIGN SECTION */
+.redesign-section{background:var(--ink);padding:4rem 0}
+.redesign-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:1080px;margin:0 auto;padding:0 1.5rem}
+.redesign-text .eyebrow{color:var(--rose)}
+.redesign-text h2{font-size:clamp(1.6rem,2.8vw,2.2rem);color:#fff;letter-spacing:-.025em;line-height:1.2;margin-bottom:1rem}
+.redesign-text p{font-size:.95rem;color:#C4A882;line-height:1.7;margin-bottom:1rem}
+.redesign-pts{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.75rem}
+.redesign-pts li{font-size:.9rem;color:#C4A882;display:flex;align-items:flex-start;gap:.6rem;line-height:1.4}
+.redesign-pts li::before{content:"✓";color:var(--rose);font-weight:700;flex-shrink:0}
+.redesign-card{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:18px;padding:2rem}
+.redesign-card h3{font-size:1.1rem;color:#fff;margin-bottom:.5rem}
+.redesign-price{font-family:'Fraunces',serif;font-size:2rem;color:var(--rose);margin-bottom:.3rem}
+.redesign-cadence{font-size:.83rem;color:#C4A882;margin-bottom:1.25rem}
+.redesign-card ul{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem}
+.redesign-card ul li{font-size:.88rem;color:#C4A882;display:flex;gap:.5rem;align-items:flex-start;line-height:1.4}
+.redesign-card ul li::before{content:"✓";color:var(--rose);font-weight:700;flex-shrink:0}
+@media(max-width:780px){.redesign-inner{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq-section{background:var(--cream);padding:4rem 0}
+.faq-section h2{font-size:clamp(1.5rem,2.5vw,2rem);color:var(--ink);letter-spacing:-.02em;margin-bottom:2rem;text-align:center}
+.faq-inner{max-width:660px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.1rem 0;font-size:.97rem;font-weight:600;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'DM Sans',sans-serif}
+.faq-chevron{color:var(--rose);font-size:1rem;flex-shrink:0;transition:transform .22s}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-a{font-size:.9rem;color:var(--muted);line-height:1.7;padding-bottom:1.1rem;display:none}
+.faq-item.open .faq-a{display:block}
+
+/* CTA */
+.cta-section{background:linear-gradient(130deg,#2C1A0E 0%,#4A2E18 100%);padding:4.5rem 1.5rem;text-align:center}
+.cta-section h2{font-family:'Fraunces',serif;font-size:clamp(1.6rem,3vw,2.2rem);color:#fff;max-width:520px;margin:0 auto .8rem;letter-spacing:-.025em;line-height:1.2}
+.cta-section p{color:#C4A882;font-size:1rem;margin:0 auto 1.75rem;max-width:400px;line-height:1.6}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-ghost-light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35);padding:.72rem 1.45rem;border-radius:8px;font-size:.93rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:all .18s}
+.btn-ghost-light:hover{background:rgba(255,255,255,.1)}
+
+/* FOOTER */
+.site-footer{background:#1A0E06;padding:2.5rem 1.5rem;text-align:center}
+.footer-brand{font-family:'Fraunces',serif;font-size:1.1rem;color:#7A5A40;margin-bottom:.5rem}
+.footer-brand em{font-style:italic;color:var(--rose)}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:.75rem;flex-wrap:wrap}
+.footer-links a{font-size:.82rem;color:#8B5E3C;text-decoration:none}
+.footer-links a:hover{color:var(--rose)}
+.site-footer p{font-size:.8rem;color:#5A3A20}
+.site-footer a{color:#8B5E3C}
+.back-top{position:fixed;bottom:1.5rem;right:1.5rem;width:46px;height:46px;background:var(--ink);color:#fff;border:none;border-radius:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s,background .18s;z-index:150;line-height:1}
+.back-top.visible{opacity:1;transform:translateY(0)}
+.back-top:hover{background:var(--rose)}
+
+/* CURR CENTER */
+.curr-center{display:flex;justify-content:center;margin-bottom:3rem}
+
+/* BUY BUTTONS */
+.btn-buy{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:var(--rose);color:#fff;border:none;padding:.65rem 1.2rem;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:background .18s,transform .12s;line-height:1;width:100%;margin-top:1rem}
+.btn-buy:hover{background:var(--rose-dark);transform:translateY(-1px)}
+.btn-buy-outline{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:transparent;color:var(--ink);border:1.5px solid var(--border);padding:.65rem 1.2rem;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:all .18s;line-height:1;width:100%;margin-top:1rem}
+.btn-buy-outline:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;bottom:1.5rem;left:1.5rem;z-index:300;display:flex;align-items:center;gap:.6rem;background:#25D366;color:#fff;border:none;border-radius:9999px;padding:.65rem 1.2rem .65rem .9rem;font-size:.88rem;font-weight:700;font-family:'DM Sans',sans-serif;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.35);transition:transform .18s,box-shadow .18s}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.45)}
+.wa-float svg{flex-shrink:0}
+/* GEO meta */
+</style>
+</head>
+<body>
+
+<header>
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="brand">michelle<em>flares</em></a>
+    <div class="nav-links">
+      <a href="/#services" class="nav-link">Services</a>
+      <a href="/#pricing" class="nav-link">Pricing</a>
+      <a href="/additional-services/" class="nav-link active">Additional Services</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <div class="curr-toggle">
+        <button class="curr-btn active" id="btn-gbp" onclick="setCurrency('GBP')">🇬🇧 £</button>
+        <button class="curr-btn" id="btn-usd" onclick="setCurrency('USD')">🇺🇸 $</button>
+      </div>
+      <a href="https://wa.me/447915897621" target="_blank" rel="noopener" class="btn btn-rose" style="width:auto">Let's talk ☕</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="/#services" class="mobile-nav-link" onclick="closeNav()">Services</a>
+  <a href="/#pricing" class="mobile-nav-link" onclick="closeNav()">Pricing</a>
+  <a href="/additional-services/" class="mobile-nav-link" onclick="closeNav()">Additional Services</a>
+  <a href="/blog/" class="mobile-nav-link" onclick="closeNav()">Blog</a>
+  <a href="/#contact" class="mobile-nav-link" onclick="closeNav()">Contact</a>
+  <div class="mobile-nav-bottom">
+    <div class="curr-toggle" style="justify-content:center">
+      <button class="curr-btn active" id="btn-gbp-m" onclick="setCurrency('GBP')">🇬🇧 UK (£)</button>
+      <button class="curr-btn" id="btn-usd-m" onclick="setCurrency('USD')">🇺🇸 US ($)</button>
+    </div>
+    <a href="https://wa.me/447915897621" target="_blank" rel="noopener" class="btn btn-rose">Let's talk ☕</a>
+  </div>
+</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="page-hero">
+  <span class="eyebrow">Additional Services</span>
+  <h1>Everything else your business <em>needs to thrive.</em></h1>
+  <p>Beyond your website and care plan, these one-time services help you get found everywhere — on Google, on maps, in AI search, and through a brand that looks the part.</p>
+  <div class="hero-note">✦ All one-time fees · <em>No hidden costs · No ongoing charges</em></div>
+</section>
+
+<div style="display:flex;justify-content:center;padding:1.5rem 0;background:var(--cream)">
+  <div class="curr-toggle">
+    <button class="curr-btn active" id="btn-gbp2" onclick="setCurrency('GBP')">🇬🇧 UK (£)</button>
+    <button class="curr-btn" id="btn-usd2" onclick="setCurrency('USD')">🇺🇸 US ($)</button>
+  </div>
+</div>
+
+<!-- GOOGLE PRESENCE -->
+<section class="services-section" id="google">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Get found on Google</span>
+      <h2>Google Presence &amp; Visibility</h2>
+      <p>Getting found on Google isn't automatic. These services ensure your business appears in the right places — Google Maps, Google Search, and beyond — as quickly as possible after launch.</p>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">📍</span>
+            <h3>Google Business Profile Setup</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£59" data-usd="$79">£59</span>
+          </div>
+        </div>
+        <p>When someone searches "plumber near me" or "café open now" — Google Maps is the very first thing they see, even before websites. I fully set up and verify your Google Business Profile so you appear there before your competitors.</p>
+        <ul class="srv-card-pts">
+          <li>Full profile setup with your business info, photos &amp; categories</li>
+          <li>Verified listing on Google Maps</li>
+          <li>Opening hours, contact details &amp; services listed</li>
+          <li>Optimised for "near me" searches</li>
+          <li>Guidance on getting your first customer reviews</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> Businesses with a verified Google profile get 7× more clicks. Most local searches end here — not on your website.</div>
+        <a href="https://buy.stripe.com/REPLACE_GMB" target="_blank" rel="noopener" class="btn-buy">Add to my business — £59 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">🔍</span>
+            <h3>Google Search Console Setup</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£79" data-usd="$106">£79</span>
+          </div>
+        </div>
+        <p style="flex:0">Google Search Console registers your website directly with Google, telling it exactly which pages to show and index — so you get found faster. Without it, Google might not discover your new site for weeks after launch.</p>
+        <ul class="srv-card-pts">
+          <li>Website submitted directly to Google</li>
+          <li>Sitemap generated and submitted</li>
+          <li>Indexing issues identified and resolved</li>
+          <li>Organic search performance tracking set up</li>
+          <li>You'll see which searches bring visitors to your site</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> Your site gets found on Google searches significantly faster — sometimes within hours instead of weeks.</div>
+        <a href="https://buy.stripe.com/REPLACE_GSC" target="_blank" rel="noopener" class="btn-buy">Add to my business — £79 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">📊</span>
+            <h3>Google Analytics Setup</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£69" data-usd="$92">£69</span>
+          </div>
+        </div>
+        <p>See exactly who visits your website — how many people, where they're from, which pages they look at, how long they stay, and whether they contacted you. Properly configured, not just installed and left to collect data randomly.</p>
+        <ul class="srv-card-pts">
+          <li>GA4 account created and connected to your site</li>
+          <li>Key events configured (contact form, phone clicks, etc.)</li>
+          <li>Linked to Google Search Console for full picture</li>
+          <li>Brief walkthrough so you know what you're looking at</li>
+          <li>Monthly traffic, source, and behaviour reports available</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> You can't improve what you can't measure. This shows you what's working and what isn't.</div>
+        <a href="https://buy.stripe.com/REPLACE_GA" target="_blank" rel="noopener" class="btn-buy">Add to my business — £69 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AI & BING -->
+<section class="services-section" id="ai-search">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">AI &amp; alternative search</span>
+      <h2>Bing, AI Search &amp; Beyond</h2>
+      <p>More and more customers are asking AI assistants — ChatGPT, Copilot, Siri, Alexa — to find local businesses. These services make sure you show up there too.</p>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">🤖</span>
+            <h3>Bing &amp; AI Search Setup</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£49" data-usd="$66">£49</span>
+          </div>
+        </div>
+        <p>Bing powers Microsoft Edge, Siri, Alexa, and — importantly — is the engine behind ChatGPT's web search and Microsoft Copilot. I submit your site and configure your Bing Business Profile so AI assistants can find and recommend you.</p>
+        <ul class="srv-card-pts">
+          <li>Site submitted to Bing Webmaster Tools</li>
+          <li>Bing Business Profile created and verified</li>
+          <li>Sitemap submitted to Bing</li>
+          <li>Configured to be discoverable by ChatGPT, Siri &amp; Alexa</li>
+          <li>Performance monitoring enabled</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> "Find me a local plumber" typed into ChatGPT returns results via Bing. If you're not there, you don't exist to those customers.</div>
+        <a href="https://buy.stripe.com/REPLACE_BING" target="_blank" rel="noopener" class="btn-buy">Add to my business — £49 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">🌐</span>
+            <h3>Full Search Visibility Bundle</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£219" data-usd="$294">£219</span>
+            <span class="srv-price-note" data-gbp="save £37 vs separate" data-usd="save $50 vs separate">save £37 vs separate</span>
+          </div>
+        </div>
+        <p>The complete visibility setup — Google Business Profile, Google Search Console, Google Analytics, and Bing &amp; AI Search — all in one go. The best possible foundation for getting found online.</p>
+        <ul class="srv-card-pts">
+          <li>Google Business Profile — verified on Maps</li>
+          <li>Google Search Console — indexed fast</li>
+          <li>Google Analytics — full tracking setup</li>
+          <li>Bing &amp; AI Search — found by ChatGPT &amp; Siri</li>
+          <li>All four services linked and working together</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> The complete package gives you maximum visibility across every platform where customers are searching.</div>
+        <a href="https://buy.stripe.com/REPLACE_BUNDLE" target="_blank" rel="noopener" class="btn-buy">Get the Full Bundle — £219 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe · Save £37 vs separate</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="compare-section" id="compare">
+  <div class="container">
+    <h2>What's included — at a glance</h2>
+    <p class="sub">See exactly what each visibility service covers</p>
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Google Business<br><small style="font-weight:400;font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--muted)" data-gbp="£59" data-usd="$79">£59</small></th>
+            <th>Search Console<br><small style="font-weight:400;font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--muted)" data-gbp="£79" data-usd="$106">£79</small></th>
+            <th>Analytics<br><small style="font-weight:400;font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--muted)" data-gbp="£69" data-usd="$92">£69</small></th>
+            <th>Bing &amp; AI<br><small style="font-weight:400;font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--muted)" data-gbp="£49" data-usd="$66">£49</small></th>
+            <th>Full Bundle<br><small style="font-weight:400;font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--muted)" data-gbp="£219" data-usd="$294">£219</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="cat-row"><td colspan="6">Google &amp; Maps</td></tr>
+          <tr><td>Appear on Google Maps</td><td class="t-yes">✓</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td></tr>
+          <tr><td>Verified "near me" listing</td><td class="t-yes">✓</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td></tr>
+          <tr><td>Fast Google indexing</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td></tr>
+          <tr><td>Track Google searches finding you</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td></tr>
+          <tr class="cat-row"><td colspan="6">Website data</td></tr>
+          <tr><td>Visitor numbers &amp; source</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-no">–</td><td class="t-yes">✓</td></tr>
+          <tr><td>Contact form &amp; phone click tracking</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-no">–</td><td class="t-yes">✓</td></tr>
+          <tr class="cat-row"><td colspan="6">AI &amp; Bing search</td></tr>
+          <tr><td>Found by ChatGPT searches</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-yes">✓</td></tr>
+          <tr><td>Found by Siri &amp; Alexa</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-yes">✓</td></tr>
+          <tr><td>Microsoft Edge &amp; Bing results</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-no">–</td><td class="t-yes">✓</td><td class="t-yes">✓</td></tr>
+          <tr class="price-row">
+            <td>Price</td>
+            <td data-gbp="£59" data-usd="$79">£59</td>
+            <td data-gbp="£79" data-usd="$106">£79</td>
+            <td data-gbp="£69" data-usd="$92">£69</td>
+            <td data-gbp="£49" data-usd="$66">£49</td>
+            <td style="color:var(--rose)" data-gbp="£219" data-usd="$294">£219</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- WEBSITE REDESIGN -->
+<section class="redesign-section" id="redesign">
+  <div class="redesign-inner">
+    <div class="redesign-text">
+      <span class="eyebrow">Website redesign</span>
+      <h2>Got an outdated website? Let's rebuild it — properly.</h2>
+      <p>Old, slow, or embarrassing websites are costing businesses customers every day. If yours was built years ago on an old platform, is no longer mobile-friendly, or just doesn't represent your business well anymore — it's time for a proper rebuild.</p>
+      <p>I'll take everything that's good about your current site (your content, your brand, your structure) and rebuild it from scratch in clean, fast, modern HTML — the same way I build all my sites. The result: a site you're proud to share, that loads instantly, and that actually converts visitors into customers.</p>
+      <ul class="redesign-pts">
+        <li>All your existing content migrated across — nothing lost</li>
+        <li>Redesigned around your current brand and preferences</li>
+        <li>Built clean from scratch — no bloated plugins or page builders</li>
+        <li>10× faster than typical rebuilt sites</li>
+        <li>Proper mobile experience, not just "mobile friendly"</li>
+        <li>New domain kept or existing domain pointed across</li>
+      </ul>
+    </div>
+    <div class="redesign-card">
+      <h3>Website Redesign</h3>
+      <div class="redesign-price" data-gbp="From £499" data-usd="From $669">From £499</div>
+      <div class="redesign-cadence">one-time rebuild fee</div>
+      <ul>
+        <li>Full rebuild in clean, fast HTML</li>
+        <li>All existing content migrated</li>
+        <li>New design matched to your brand</li>
+        <li>Domain name included or transferred</li>
+        <li>Mobile-optimised from the ground up</li>
+        <li>Live within 5 working days</li>
+        <li>One round of revisions included</li>
+      </ul>
+      <a href="/#contact" class="btn btn-rose" style="width:100%;justify-content:center">Get a free quote →</a>
+      <p style="font-size:.75rem;color:#C4A882;margin-top:.75rem;text-align:center">Final price depends on pages and complexity</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDING -->
+<section class="services-section" id="branding">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Brand &amp; identity</span>
+      <h2>Logo Design &amp; Branding</h2>
+      <p>A great website needs a great brand to match. A proper logo makes you look established, trustworthy, and memorable — even before a customer reads a single word.</p>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time fee</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">✏️</span>
+            <h3>Logo Design — Starter</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£149" data-usd="$200">£149</span>
+          </div>
+        </div>
+        <p>A clean, professional logo for your business — designed to look great on your website, email signature, social media, and printed materials. Simple, timeless, and yours to keep.</p>
+        <ul class="srv-card-pts">
+          <li>3 initial concepts to choose from</li>
+          <li>2 rounds of revisions included</li>
+          <li>Delivered in PNG, SVG and JPG formats</li>
+          <li>Light and dark versions included</li>
+          <li>Full ownership of the final file</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> Your logo is often the first thing customers see. A professional one builds immediate trust.</div>
+        <a href="https://buy.stripe.com/REPLACE_LOGO1" target="_blank" rel="noopener" class="btn-buy">Get this for my business — £149 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time fee</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">🎨</span>
+            <h3>Logo &amp; Brand Identity Pack</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£299" data-usd="$401">£299</span>
+          </div>
+        </div>
+        <p>A complete visual identity for your business — logo, colour palette, typography and usage guidelines. Everything you need to look consistently professional across your website, social media, print, and beyond.</p>
+        <ul class="srv-card-pts">
+          <li>Logo design (3 concepts, 3 revision rounds)</li>
+          <li>Brand colour palette with hex/RGB codes</li>
+          <li>Font pairing recommendation</li>
+          <li>Business card design included</li>
+          <li>Brand guidelines PDF — so everything stays consistent</li>
+          <li>All files delivered in print &amp; web formats</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> A consistent brand identity makes you look established and trustworthy across every touchpoint.</div>
+        <a href="https://buy.stripe.com/REPLACE_LOGO2" target="_blank" rel="noopener" class="btn-buy">Get this for my business — £299 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section class="services-section" id="social">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Social media</span>
+      <h2>Social Media Setup</h2>
+      <p>Social media can be a powerful tool for local businesses — but it only works if it's set up properly and looks professional from day one. I handle the setup so you can focus on posting.</p>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">📱</span>
+            <h3>Single Platform Setup</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£149" data-usd="$200">£149</span>
+            <span class="srv-price-note">per platform · incl. 3 posts</span>
+          </div>
+        </div>
+        <p style="flex:0">Full professional setup for one social media platform of your choice — Facebook, Instagram, or TikTok Business. Properly branded, correctly configured, 3 initial branded posts created, and ready to attract customers from day one.</p>
+        <ul class="srv-card-pts">
+          <li>Profile and cover images sized correctly for the platform</li>
+          <li>Bio and description written professionally</li>
+          <li>Business account features enabled</li>
+          <li>Contact details, location and hours set up</li>
+          <li>3 initial post templates designed to match your brand</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> A half-finished social profile looks worse than none at all. A properly set up page builds confidence in potential customers.</div>
+        <a href="https://buy.stripe.com/REPLACE_SOC1" target="_blank" rel="noopener" class="btn-buy">Set up one platform — £149 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe</p>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-badge">One-time setup</div>
+        <div class="srv-card-top">
+          <div class="srv-card-icon-title">
+            <span class="srv-card-icon">🌟</span>
+            <h3>Full Social Media Setup</h3>
+          </div>
+          <div class="srv-price-wrap">
+            <span class="srv-price" data-gbp="£359" data-usd="$481">£359</span>
+            <span class="srv-price-note" data-gbp="20% off · save £88" data-usd="20% off · save $118">20% off · save £88</span>
+          </div>
+        </div>
+        <p>Professional setup across Facebook, Instagram, and TikTok Business — fully branded, consistent across all platforms, and ready to attract customers on day one.</p>
+        <ul class="srv-card-pts">
+          <li>All three platforms set up and branded consistently</li>
+          <li>Profiles linked together where possible</li>
+          <li>5 initial post templates designed for your brand</li>
+          <li>Brief guide on what to post and when</li>
+          <li>Linked to your website where applicable</li>
+        </ul>
+        <div class="srv-why"><strong>Why it matters:</strong> Customers check your social media before they contact you. Three professional profiles give three chances to make a great first impression.</div>
+        <a href="https://buy.stripe.com/REPLACE_SOC3" target="_blank" rel="noopener" class="btn-buy">Set up all 3 platforms — £359 →</a>
+        <p style="font-size:.72rem;color:#B09070;text-align:center;margin-top:.5rem">🔒 Secure payment via Stripe · 20% off — save £88</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <h2>Common questions about additional services</h2>
+    <div class="faq-inner">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need a website first before adding these services?<span class="faq-chevron">▾</span></button>
+        <p class="faq-a">For most services (Google Search Console, Analytics, Bing setup), yes — you'll need a live website. Google Business Profile can be set up independently. Logo design and social media setup can also be done without a website, though they work best as part of a complete package.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are these really one-time fees with no ongoing costs?<span class="faq-chevron">▾</span></button>
+        <p class="faq-a">Yes, completely. You pay once for the setup — there are no monthly charges, no subscription fees, and no hidden costs associated with these additional services. Google Business Profile, Google Search Console, Analytics, and Bing are all free tools; I charge for the proper setup and configuration.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How is the Full Search Visibility Bundle different from buying separately?<span class="faq-chevron">▾</span></button>
+        <p class="faq-a">The bundle includes all four services (Google Business Profile, Search Console, Analytics, Bing &amp; AI Search) at £219 — saving you £37 compared to purchasing them individually at £256. Everything is also set up at the same time and properly linked together, which gives you a stronger overall result.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I add these services after my website is already live?<span class="faq-chevron">▾</span></button>
+        <p class="faq-a">Absolutely. You can add any additional service at any time — there's no deadline or requirement to bundle them with the initial build. Many clients start with just the website and care plan, then add Google visibility services once they're up and running.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does a website redesign take?<span class="faq-chevron">▾</span></button>
+        <p class="faq-a">Most redesigns are completed within 5 working days. This includes migrating all your existing content, rebuilding in clean HTML, implementing the new design, and one round of revisions. Your existing site stays live throughout the process — the switch happens only once you've approved the new one.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What social media platforms do you set up?<span class="faq-chevron">▾</span></button>
+        <p class="faq-a">I set up Facebook Business Pages, Instagram Business accounts, and TikTok Business accounts. If you need a different platform — LinkedIn, for example — just ask. The single platform price applies per platform, or ask me about a custom bundle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Not sure which services you need?</h2>
+  <p>Drop me a message and I'll recommend exactly what makes sense for your business and budget — no pressure, no jargon.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447915897621" target="_blank" rel="noopener" class="btn btn-rose" style="width:auto">WhatsApp me ☕</a>
+    <a href="/#contact" class="btn-ghost-light">Send a message →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-brand">michelle<em>flares</em>.com</p>
+    <nav class="footer-links">
+      <a href="/#services">Services</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/additional-services/">Additional Services</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+    <p>© 2026 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></p>
+  </div>
+</footer>
+
+<button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+function setCurrency(c){
+  document.querySelectorAll('[data-gbp]').forEach(function(el){
+    el.textContent=c==='GBP'?el.dataset.gbp:el.dataset.usd;
+  });
+  ['btn-gbp','btn-gbp2','btn-gbp-m'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.classList.toggle('active',c==='GBP');
+  });
+  ['btn-usd','btn-usd2','btn-usd-m'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.classList.toggle('active',c==='USD');
+  });
+}
+window.addEventListener('scroll',function(){
+  var b=document.getElementById('back-top');
+  if(b)b.classList.toggle('visible',window.scrollY>400);
+});
+var hamburger=document.getElementById('hamburger');
+var mobileNav=document.getElementById('mobile-nav');
+hamburger.addEventListener('click',function(){
+  var open=mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open',open);
+  hamburger.setAttribute('aria-expanded',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+function closeNav(){
+  mobileNav.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+document.addEventListener('click',function(e){
+  if(mobileNav.classList.contains('open')&&!mobileNav.contains(e.target)&&!hamburger.contains(e.target))closeNav();
+});
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.parentElement,isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+    document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('aria-expanded','false');});
+    if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  });
+});
+</script>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/447915897621?text=Hi%20Michelle!%20I%20have%20a%20question%20about%20your%20additional%20services." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Got a question? Just ask me ☕
+</a>
+
+</body>
+</html>
