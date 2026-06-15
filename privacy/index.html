@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Michelle Flares</title>
+<meta name="description" content="Privacy Policy for michelleflares.com — how we collect, use and protect your personal data in accordance with UK GDPR and the Data Protection Act 2018.">
+<link rel="canonical" href="https://michelleflares.com/privacy/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2C1A0E">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#FFFBF7;color:#4A3020;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+:root{
+  --ink:#2C1A0E;--rose:#C85C6E;--rose-dark:#A8485A;
+  --cream:#FFFBF7;--cream-alt:#F7EEE4;--cream-deep:#FDF5EC;
+  --border:#E8D5C0;--muted:#7A5A40;--light-muted:#A07850;
+}
+h1,h2,h3{font-family:'Fraunces',serif}
+.container{max-width:780px;margin:0 auto;padding:0 1.5rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:var(--ink);color:#fff;border:none;padding:.72rem 1.45rem;border-radius:8px;font-size:.93rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:background .18s;line-height:1}
+.btn:hover{background:#4A2E18}
+.btn-rose{background:var(--rose)}
+.btn-rose:hover{background:var(--rose-dark)}
+.curr-toggle{display:flex;background:#F0E4D4;border-radius:9999px;padding:3px;gap:2px}
+.curr-btn{background:transparent;border:none;padding:.28rem .75rem;border-radius:9999px;font-size:.8rem;font-weight:600;color:#9A7A60;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;white-space:nowrap}
+.curr-btn.active{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(44,26,14,.15)}
+header{position:sticky;top:0;z-index:200}
+.site-nav{background:rgba(255,251,247,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:'Fraunces',serif;font-size:1.22rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-.02em}
+.brand em{font-style:italic;color:var(--rose)}
+.nav-links{display:flex;align-items:center;gap:.15rem}
+.nav-link{font-size:.87rem;font-weight:500;color:var(--muted);padding:.45rem .7rem;border-radius:6px;text-decoration:none;white-space:nowrap;transition:color .18s,background .18s}
+.nav-link:hover{color:var(--ink);background:var(--cream-alt)}
+.nav-right{display:flex;align-items:center;gap:.75rem}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px}
+.mobile-nav{display:none;position:fixed;inset:0;top:60px;background:var(--cream);z-index:199;padding:1.5rem;flex-direction:column;gap:.25rem;border-top:1px solid var(--border);overflow-y:auto}
+.mobile-nav.open{display:flex}
+.mobile-nav-link{font-size:1.05rem;font-weight:600;color:var(--ink);padding:.85rem 1rem;border-radius:10px;text-decoration:none}
+.mobile-nav-link:hover{background:var(--cream-alt)}
+.mobile-nav-bottom{margin-top:1rem;display:flex;flex-direction:column;gap:.75rem;padding-top:1rem;border-top:1px solid var(--border)}
+@media(max-width:780px){.nav-links{display:none}.hamburger{display:flex}.nav-right .btn{display:none}}
+
+/* PAGE */
+.page-hero{background:linear-gradient(160deg,#FDF5EC 0%,#FFFBF7 60%);padding:3.5rem 1.5rem 2.5rem}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--rose);display:block;margin-bottom:.7rem}
+.page-hero h1{font-size:clamp(1.8rem,4vw,2.6rem);color:var(--ink);letter-spacing:-.03em;line-height:1.15;margin-bottom:.75rem}
+.page-hero .meta{font-size:.85rem;color:var(--muted)}
+
+/* CONTENT */
+.privacy-body{padding:3rem 1.5rem 5rem}
+.privacy-body h2{font-size:1.25rem;color:var(--ink);margin-top:2.5rem;margin-bottom:.75rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
+.privacy-body h3{font-size:1rem;font-weight:600;color:var(--ink);margin-top:1.5rem;margin-bottom:.5rem}
+.privacy-body p{font-size:.93rem;color:#5A3A20;line-height:1.75;margin-bottom:.85rem}
+.privacy-body ul{list-style:none;margin-bottom:.85rem;display:flex;flex-direction:column;gap:.45rem;padding-left:.5rem}
+.privacy-body ul li{font-size:.93rem;color:#5A3A20;line-height:1.65;display:flex;align-items:flex-start;gap:.6rem}
+.privacy-body ul li::before{content:"·";color:var(--rose);font-weight:700;flex-shrink:0;margin-top:.05rem}
+.privacy-body a{color:var(--rose);text-decoration:underline;text-underline-offset:2px}
+.privacy-body a:hover{color:var(--rose-dark)}
+.info-box{background:var(--cream-alt);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0}
+.info-box p{margin-bottom:0}
+.info-box p+p{margin-top:.5rem}
+.table-of-contents{background:var(--cream-deep);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:2.5rem}
+.table-of-contents h3{font-size:.85rem;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+.table-of-contents ol{list-style:decimal;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+.table-of-contents ol li{font-size:.88rem;color:var(--muted)}
+.table-of-contents ol li a{color:var(--rose);text-decoration:none;font-weight:500}
+.table-of-contents ol li a:hover{text-decoration:underline}
+
+.site-footer{background:#1A0E06;padding:2.5rem 1.5rem;text-align:center}
+.footer-brand{font-family:'Fraunces',serif;font-size:1.1rem;color:#7A5A40;margin-bottom:.5rem}
+.footer-brand em{font-style:italic;color:var(--rose)}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:.75rem;flex-wrap:wrap}
+.footer-links a{font-size:.82rem;color:#8B5E3C;text-decoration:none}
+.footer-links a:hover{color:var(--rose)}
+.site-footer p{font-size:.8rem;color:#5A3A20}
+.site-footer a{color:#8B5E3C}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="brand">michelle<em>flares</em></a>
+    <div class="nav-links">
+      <a href="/#services" class="nav-link">Services</a>
+      <a href="/#portfolio" class="nav-link">Portfolio</a>
+      <a href="/#pricing" class="nav-link">Pricing</a>
+      <a href="/additional-services/" class="nav-link">Additional Services</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/447915897621" target="_blank" rel="noopener" class="btn btn-rose" style="width:auto">Let's talk ☕</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="/#services" class="mobile-nav-link">Services</a>
+  <a href="/#portfolio" class="mobile-nav-link">Portfolio</a>
+  <a href="/#pricing" class="mobile-nav-link">Pricing</a>
+  <a href="/additional-services/" class="mobile-nav-link">Additional Services</a>
+  <a href="/blog/" class="mobile-nav-link">Blog</a>
+  <a href="/#contact" class="mobile-nav-link">Contact</a>
+  <div class="mobile-nav-bottom">
+    <a href="https://wa.me/447915897621" target="_blank" rel="noopener" class="btn btn-rose">Let's talk ☕</a>
+  </div>
+</div>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 15 June 2026 &nbsp;·&nbsp; Michelle Flares · <a href="mailto:hello@michelleflares.com" style="color:var(--rose)">hello@michelleflares.com</a></p>
+  </div>
+</div>
+
+<div class="privacy-body">
+  <div class="container">
+
+    <div class="info-box">
+      <p>This Privacy Policy explains how Michelle Flares ("I", "me", "my") collects, uses, stores and protects your personal data when you visit <strong>michelleflares.com</strong> or use my services.</p>
+      <p>I am committed to protecting your privacy and handling your data in an open and transparent manner, in accordance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.</p>
+    </div>
+
+    <div class="table-of-contents">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#controller">Data controller</a></li>
+        <li><a href="#what-data">What personal data I collect</a></li>
+        <li><a href="#how-collected">How I collect your data</a></li>
+        <li><a href="#why-collected">Why I collect your data and the legal basis</a></li>
+        <li><a href="#how-used">How I use your data</a></li>
+        <li><a href="#sharing">Who I share your data with</a></li>
+        <li><a href="#retention">How long I keep your data</a></li>
+        <li><a href="#security">How I protect your data</a></li>
+        <li><a href="#cookies">Cookies and tracking</a></li>
+        <li><a href="#third-party">Third-party services</a></li>
+        <li><a href="#transfers">International data transfers</a></li>
+        <li><a href="#rights">Your rights under UK GDPR</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">How to contact me</a></li>
+      </ol>
+    </div>
+
+    <h2 id="controller">1. Data Controller</h2>
+    <p>The data controller responsible for your personal data is:</p>
+    <div class="info-box">
+      <p><strong>Michelle Flares</strong><br>
+      Trading as: Michelle Flares Web Design<br>
+      Website: <a href="https://michelleflares.com">michelleflares.com</a><br>
+      Email: <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a><br>
+      Phone: <a href="tel:+447915897621">+44 7915 897621</a><br>
+      Area served: United Kingdom (and internationally)</p>
+    </div>
+    <p>As a sole trader, I am the single point of contact for all data protection matters. If you have any questions or concerns about how I handle your data, please contact me directly.</p>
+
+    <h2 id="what-data">2. What Personal Data I Collect</h2>
+    <p>Depending on how you interact with my website, I may collect the following categories of personal data:</p>
+
+    <h3>Contact and enquiry data</h3>
+    <ul>
+      <li>Full name</li>
+      <li>Email address</li>
+      <li>Phone number or WhatsApp number (if provided)</li>
+      <li>Business name</li>
+      <li>The services you are interested in</li>
+      <li>Any additional information you choose to include in your message</li>
+    </ul>
+
+    <h3>Technical and usage data</h3>
+    <ul>
+      <li>IP address</li>
+      <li>Browser type and version</li>
+      <li>Operating system</li>
+      <li>Pages visited on this website and time spent on each page</li>
+      <li>Referring website (how you found my site)</li>
+      <li>Date and time of your visit</li>
+      <li>General geographic location (country/region level, derived from IP address)</li>
+    </ul>
+
+    <h3>Payment data</h3>
+    <p>I do not collect, store, or process any payment card details directly. All payments are processed securely by <strong>Stripe</strong>, a PCI-DSS compliant payment processor. Please refer to <a href="https://stripe.com/gb/privacy" target="_blank" rel="noopener">Stripe's Privacy Policy</a> for information on how they handle your payment data.</p>
+
+    <h3>Communication data</h3>
+    <ul>
+      <li>Email correspondence between you and me</li>
+      <li>WhatsApp messages (if you contact me via WhatsApp)</li>
+    </ul>
+
+    <h2 id="how-collected">3. How I Collect Your Data</h2>
+    <p>I collect personal data through the following means:</p>
+    <ul>
+      <li><strong>Contact form</strong> on this website — when you complete and submit the enquiry form</li>
+      <li><strong>Direct email</strong> — when you email me at hello@michelleflares.com</li>
+      <li><strong>WhatsApp</strong> — when you message me via the WhatsApp link on this website</li>
+      <li><strong>Phone calls</strong> — when you call the number listed on this website</li>
+      <li><strong>Cookies and analytics tools</strong> — automatically when you browse this website (see Section 9)</li>
+      <li><strong>Stripe</strong> — when you make a payment, Stripe may share limited transaction-related data with me (e.g. confirmation of payment and your email address)</li>
+    </ul>
+
+    <h2 id="why-collected">4. Why I Collect Your Data and the Legal Basis</h2>
+    <p>Under UK GDPR, I must have a valid legal basis for processing your personal data. The legal bases I rely on are:</p>
+
+    <h3>Legitimate interests (Article 6(1)(f) UK GDPR)</h3>
+    <ul>
+      <li>Responding to your enquiry and communicating with you about potential or ongoing work</li>
+      <li>Improving my website and services based on how visitors use them</li>
+      <li>Protecting my website and business from fraud or abuse</li>
+    </ul>
+
+    <h3>Contract performance (Article 6(1)(b) UK GDPR)</h3>
+    <ul>
+      <li>Processing your data when necessary to enter into or fulfil a contract with you — for example, to build your website, manage your hosting, or set up your email</li>
+    </ul>
+
+    <h3>Consent (Article 6(1)(a) UK GDPR)</h3>
+    <ul>
+      <li>If you tick the consent checkbox on the contact form, you are giving me consent to use your information to respond to your enquiry</li>
+      <li>You may withdraw your consent at any time by contacting me at hello@michelleflares.com</li>
+    </ul>
+
+    <h3>Legal obligation (Article 6(1)(c) UK GDPR)</h3>
+    <ul>
+      <li>Where I am required by law to retain certain records — for example, for tax and accounting purposes under HMRC rules</li>
+    </ul>
+
+    <h2 id="how-used">5. How I Use Your Data</h2>
+    <p>I use your personal data only for the purposes for which it was collected. Specifically:</p>
+    <ul>
+      <li>To respond to your enquiries and provide quotes for web design and related services</li>
+      <li>To deliver the services you have purchased — building your website, managing your hosting, setting up email, and providing ongoing care and support</li>
+      <li>To send you updates relating to your project or service (e.g. letting you know your website is live, or that your domain is due for renewal)</li>
+      <li>To process payments through Stripe</li>
+      <li>To maintain records for accounting and tax compliance</li>
+      <li>To improve the performance and usability of this website</li>
+      <li>To detect and prevent fraud or misuse of my services</li>
+    </ul>
+    <p>I will <strong>never</strong> sell your personal data to third parties. I will <strong>never</strong> use your data for unsolicited marketing without your explicit consent.</p>
+
+    <h2 id="sharing">6. Who I Share Your Data With</h2>
+    <p>I keep your personal data to myself wherever possible. However, to deliver my services, I work with a small number of trusted third-party processors:</p>
+
+    <h3>Formspree (contact form processing)</h3>
+    <p>The contact form on this website is powered by <strong>Formspree</strong> (Formspree Inc.), which receives your form submission and forwards it to my email inbox. Formspree processes data in accordance with its <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>. Data may be stored on servers in the United States. Formspree is covered by appropriate Standard Contractual Clauses for international transfers.</p>
+
+    <h3>Stripe (payment processing)</h3>
+    <p><strong>Stripe</strong> (Stripe, Inc.) processes all online payments. I never see or store your full card details. Stripe is PCI-DSS Level 1 certified. Please see <a href="https://stripe.com/gb/privacy" target="_blank" rel="noopener">Stripe's Privacy Policy</a> for full details.</p>
+
+    <h3>Google (analytics and search tools)</h3>
+    <p>Where enabled, I use <strong>Google Analytics</strong> (Google LLC) to understand website traffic. Google Analytics collects anonymised usage data via cookies. I have enabled IP anonymisation. Google may process data in the United States. For more, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    <p>I also use <strong>Google Search Console</strong> to monitor search performance. This tool does not collect personal data from website visitors.</p>
+
+    <h3>GitHub Pages (website hosting)</h3>
+    <p>This website is hosted on <strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft subsidiary). GitHub may collect technical data such as IP addresses for security and operational purposes. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>.</p>
+
+    <h3>WhatsApp (direct messaging)</h3>
+    <p>If you contact me via WhatsApp (Meta Platforms, Inc.), your message is subject to <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener">WhatsApp's Privacy Policy</a>. I only use WhatsApp to communicate with you about your enquiry or project.</p>
+
+    <p>I do not share your data with any other third parties unless required to do so by law (for example, by a court order or to comply with a regulatory requirement).</p>
+
+    <h2 id="retention">7. How Long I Keep Your Data</h2>
+    <p>I retain your personal data only for as long as necessary for the purposes set out in this policy:</p>
+    <ul>
+      <li><strong>Enquiries that did not result in a project:</strong> I will delete your contact information within <strong>12 months</strong> of our last communication, unless you have asked me to keep it for future reference.</li>
+      <li><strong>Clients (active or completed projects):</strong> I retain project-related communications and records for <strong>6 years</strong> after the end of our working relationship, in line with HMRC requirements for business records.</li>
+      <li><strong>Payment records:</strong> Retained for <strong>6 years</strong> from the date of transaction, as required by HMRC for tax purposes.</li>
+      <li><strong>Analytics data:</strong> Google Analytics data is retained for <strong>14 months</strong> by default (as configured in Google Analytics settings).</li>
+      <li><strong>Website contact form submissions:</strong> Stored in my email inbox and deleted after <strong>12 months</strong> if no project resulted.</li>
+    </ul>
+    <p>When data is no longer needed, I delete it securely from my systems and request deletion from any relevant third-party processors where applicable.</p>
+
+    <h2 id="security">8. How I Protect Your Data</h2>
+    <p>I take the security of your personal data seriously and have implemented appropriate technical and organisational measures, including:</p>
+    <ul>
+      <li>All data transmitted via this website is encrypted using <strong>SSL/TLS (HTTPS)</strong></li>
+      <li>Payments are processed by <strong>Stripe</strong>, which holds PCI-DSS Level 1 certification — the highest level of payment security</li>
+      <li>Access to my email and business accounts is protected by <strong>strong passwords and two-factor authentication (2FA)</strong></li>
+      <li>I do not store your payment card details — ever</li>
+      <li>I use reputable, security-maintained third-party services (Formspree, GitHub Pages, Stripe)</li>
+      <li>I only retain data for as long as necessary (see Section 7)</li>
+    </ul>
+    <p>However, please be aware that no method of internet transmission is 100% secure. While I strive to use commercially acceptable means to protect your data, I cannot guarantee absolute security.</p>
+    <p>In the event of a personal data breach that is likely to result in a risk to your rights and freedoms, I will notify the <strong>Information Commissioner's Office (ICO)</strong> within 72 hours as required by UK GDPR, and I will notify you directly where required.</p>
+
+    <h2 id="cookies">9. Cookies and Tracking</h2>
+    <p>This website uses cookies — small text files stored on your device — to help the site function and to understand how it is used.</p>
+
+    <h3>Strictly necessary cookies</h3>
+    <p>These are essential for the website to function and cannot be switched off. They do not collect personal data and do not require consent.</p>
+
+    <h3>Analytics cookies (Google Analytics)</h3>
+    <p>Where Google Analytics is enabled on this site, it uses cookies to collect anonymised information about how visitors use the website — such as pages visited, time spent, and browser type. IP addresses are anonymised before storage. These cookies are only placed with your consent where consent mechanisms are implemented.</p>
+    <p>You can opt out of Google Analytics tracking at any time by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+    <h3>Managing cookies</h3>
+    <p>You can control and delete cookies through your browser settings. Please note that disabling certain cookies may affect the functionality of this website. For more information on managing cookies, visit <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">allaboutcookies.org</a>.</p>
+
+    <h2 id="third-party">10. Third-Party Services and Links</h2>
+    <p>This website may contain links to third-party websites (for example, in blog articles or the portfolio section). I am not responsible for the privacy practices of those websites and encourage you to read their privacy policies before providing any personal data.</p>
+    <p>Third-party services used on this site include Google Fonts (for typography), which may collect limited technical data. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+    <h2 id="transfers">11. International Data Transfers</h2>
+    <p>Some of the third-party services I use may transfer data outside the United Kingdom. Where this occurs, I ensure that appropriate safeguards are in place, such as:</p>
+    <ul>
+      <li>Standard Contractual Clauses (SCCs) approved by the ICO or European Commission</li>
+      <li>Adequacy decisions recognising the destination country as providing equivalent data protection</li>
+      <li>Binding Corporate Rules (where applicable)</li>
+    </ul>
+    <p>The main services that may transfer data internationally are Formspree (US), Stripe (US), and Google (US/global). Each has appropriate mechanisms in place for UK-to-US transfers following the UK's adequacy framework.</p>
+
+    <h2 id="rights">12. Your Rights Under UK GDPR</h2>
+    <p>Under the UK General Data Protection Regulation and the Data Protection Act 2018, you have the following rights regarding your personal data:</p>
+
+    <h3>Right of access</h3>
+    <p>You have the right to request a copy of the personal data I hold about you (a Subject Access Request). I will respond within <strong>one month</strong> of receiving your request.</p>
+
+    <h3>Right to rectification</h3>
+    <p>You have the right to request that I correct any inaccurate or incomplete personal data I hold about you.</p>
+
+    <h3>Right to erasure ("right to be forgotten")</h3>
+    <p>You have the right to request that I delete your personal data in certain circumstances — for example, if the data is no longer necessary for the purpose it was collected, or if you withdraw consent. Note that I may need to retain certain data to comply with legal obligations (e.g. tax records).</p>
+
+    <h3>Right to restrict processing</h3>
+    <p>You have the right to request that I restrict the processing of your data in certain circumstances — for example, if you contest its accuracy or object to processing.</p>
+
+    <h3>Right to data portability</h3>
+    <p>Where processing is based on your consent or a contract, and is carried out by automated means, you have the right to receive your data in a structured, commonly used, machine-readable format, and to request that I transmit it to another controller where technically feasible.</p>
+
+    <h3>Right to object</h3>
+    <p>You have the right to object to the processing of your personal data where I rely on legitimate interests as the legal basis. I will cease processing unless I can demonstrate compelling legitimate grounds that override your interests.</p>
+
+    <h3>Rights related to automated decision-making</h3>
+    <p>I do not use automated decision-making or profiling that produces legal or similarly significant effects on you. No decisions about you are made solely by automated means.</p>
+
+    <h3>Right to withdraw consent</h3>
+    <p>Where processing is based on consent, you have the right to withdraw that consent at any time. Withdrawal does not affect the lawfulness of processing carried out before withdrawal.</p>
+
+    <h3>How to exercise your rights</h3>
+    <p>To exercise any of your rights, please contact me by email at <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a> or by phone at <a href="tel:+447915897621">+44 7915 897621</a>. I will respond within one calendar month. I will not charge a fee for reasonable requests.</p>
+
+    <h3>Right to lodge a complaint</h3>
+    <p>If you are unhappy with how I have handled your data, you have the right to lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong>, the UK's data protection supervisory authority:</p>
+    <div class="info-box">
+      <p><strong>Information Commissioner's Office</strong><br>
+      Website: <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a><br>
+      Helpline: 0303 123 1113<br>
+      Post: Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF</p>
+    </div>
+    <p>I would, however, appreciate the opportunity to address your concerns before you approach the ICO, so please contact me in the first instance.</p>
+
+    <h2 id="children">13. Children's Privacy</h2>
+    <p>My services are directed at adults and businesses. I do not knowingly collect personal data from children under the age of 13. If I become aware that I have inadvertently collected personal data from a child under 13, I will delete it promptly. If you believe I may have collected data from a child, please contact me immediately at <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a>.</p>
+
+    <h2 id="changes">14. Changes to This Privacy Policy</h2>
+    <p>I may update this Privacy Policy from time to time to reflect changes in my practices, services, or legal requirements. When I make material changes, I will update the "Last updated" date at the top of this page.</p>
+    <p>I encourage you to review this policy periodically. Your continued use of this website after any changes constitutes your acceptance of the updated policy. Where changes are significant, I may notify existing clients directly by email.</p>
+
+    <h2 id="contact">15. How to Contact Me</h2>
+    <p>For any questions, concerns, or requests relating to this Privacy Policy or the handling of your personal data, please contact me:</p>
+    <div class="info-box">
+      <p><strong>Michelle Flares</strong><br>
+      Email: <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a><br>
+      Phone: <a href="tel:+447915897621">+44 7915 897621</a><br>
+      WhatsApp: <a href="https://wa.me/447915897621" target="_blank" rel="noopener">wa.me/447915897621</a></p>
+    </div>
+    <p>I aim to respond to all data protection enquiries within <strong>5 business days</strong>, and to all Subject Access Requests within <strong>one calendar month</strong>.</p>
+
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center">
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.25rem">Ready to get your business online?</p>
+      <a href="/#contact" class="btn btn-rose">Get in touch →</a>
+    </div>
+
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="max-width:1080px;margin:0 auto">
+    <p class="footer-brand">michelle<em>flares</em>.com</p>
+    <nav class="footer-links">
+      <a href="/#services">Services</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/additional-services/">Additional Services</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy/">Privacy</a>
+    </nav>
+    <p>© 2026 Michelle Flares · <a href="mailto:hello@michelleflares.com">hello@michelleflares.com</a></p>
+  </div>
+</footer>
+
+<script>
+var hamburger=document.getElementById('hamburger');
+var mobileNav=document.getElementById('mobile-nav');
+hamburger.addEventListener('click',function(){
+  var open=mobileNav.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+document.addEventListener('click',function(e){
+  if(mobileNav.classList.contains('open')&&!mobileNav.contains(e.target)&&!hamburger.contains(e.target)){
+    mobileNav.classList.remove('open');
+    document.body.style.overflow='';
+  }
+});
+</script>
+</body>
+</html>
