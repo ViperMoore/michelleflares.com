@@ -575,7 +575,7 @@ header{position:sticky;top:0;z-index:200}
           <button class="care-btn active" id="care-annual-btn" onclick="setCarePlan('annual',this)">Annual — 2 months free</button>
           <button class="care-btn" id="care-monthly-btn" onclick="setCarePlan('monthly',this)">Monthly</button>
         </div>
-        <div id="care-save-wrap"><div class="pcard-save">2 months free — just <span id="care-equiv" data-gbp="£14.08/mo" data-usd="$18.87/mo">£14.08/mo</span></div></div>
+        <div id="care-save-wrap"><div class="pcard-save">Annual — just <span id="care-equiv" data-gbp="£14/mo" data-usd="$18.75/mo">£14/mo</span></div></div>
         <div class="pcard-price" id="care-price" data-gbp="£169" data-usd="$226">£169</div>
         <div class="pcard-cadence" id="care-cadence">per year · save <span id="care-save-vs" data-gbp="£34.80" data-usd="$47">£34.80</span> vs monthly</div>
         <ul class="pcard-inc">
@@ -588,7 +588,7 @@ header{position:sticky;top:0;z-index:200}
           <li><span class="pcheck">✓</span> Same-day email support</li>
           <li id="cancel-row" style="display:none"><span class="pcheck">✓</span> Cancel anytime, no contract</li>
         </ul>
-        <a href="https://buy.stripe.com/dRmeV51QZb810dIazBbfO03" id="care-pay-btn" target="_blank" rel="noopener" class="btn btn-rose btn-full">Get the Annual Plan →</a>
+        <a href="https://buy.stripe.com/dRmeV51QZb810dIazBbfO03" id="care-pay-btn" target="_blank" rel="noopener" class="btn btn-rose btn-full">Get 2 months free →</a>
         <p class="stripe-note">🔒 Secure payment via Stripe</p>
       </div>
 
@@ -846,8 +846,8 @@ var carePlan = 'annual';
 
 var CARE_DATA = {
   annual: {
-    GBP: { price:'£169', cadence:'per year · save', saveVs:'£34.80', equiv:'£14.08/mo', btn:'Get the Annual Plan →', href:'https://buy.stripe.com/dRmeV51QZb810dIazBbfO03', pill:'Best value', showSave:true, showCancel:false },
-    USD: { price:'$226', cadence:'per year · save', saveVs:'$47', equiv:'$18.87/mo', btn:'Get the Annual Plan →', href:'https://buy.stripe.com/dRmeV51QZb810dIazBbfO03', pill:'Best value', showSave:true, showCancel:false }
+    GBP: { price:'£169', cadence:'per year · save', saveVs:'£34.80', equiv:'£14/mo', btn:'Get 2 months free →', href:'https://buy.stripe.com/dRmeV51QZb810dIazBbfO03', pill:'Best value', showSave:true, showCancel:false },
+    USD: { price:'$226', cadence:'per year · save', saveVs:'$47', equiv:'$18.75/mo', btn:'Get 2 months free →', href:'https://buy.stripe.com/dRmeV51QZb810dIazBbfO03', pill:'Best value', showSave:true, showCancel:false }
   },
   monthly: {
     GBP: { price:'£16.90', cadence:'per month', saveVs:'', equiv:'', btn:'Subscribe Monthly →', href:'https://buy.stripe.com/3cI9AL0MVb817GaazBbfO01', pill:'Flexible', showSave:false, showCancel:true },
